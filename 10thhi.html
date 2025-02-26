@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="all.css">
+  <style>
+  .container0 a {
+    padding-left: 10%;
+    text-decoration: none;
+    color: black;
+  }
+  .container0 {
+    margin-right: 0px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .container {
+    margin-right: 0px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  details{
+    border-top:2px solid black ;
+    border-bottom:2px solid black ;
+  }
+  /** use for body tag only **/
+
+*{
+
+    margin: 0;
+    font-family:Arial;
+    border:border-box;
+    text-decoration:none;
+}
+
+
+/**top content **/
+.navbar{
+    padding:10px ;
+    justify-content:space-evenly;
+    height:40px;
+    display:flex;
+    background-color:rgb(25,25,25);
+    color:white;
+    font-size:0.57rem;
+    align-items:center;
+}
+
+
+/** top location **/
+.navbar-location{
+    display:flex;
+    justify-content:center;
+    justify-items:center;
+    text-align:center;
+}
+
+
+/** top location border **/
+.navbar-location h1{
+    padding: 10px;
+    border:2px solid transparent;
+}
+
+/** top location border **/
+.navbar-location h1:hover{
+    border-radius:15px;
+    border:2px solid white;
+}
+
+
+/** make search and symbol **/
+.navbar-search{
+    align-items:center;
+    display:flex;
+    justify-content: space-evenly;
+    justify-content:center;
+    justify-items:center;
+}
+
+
+/** search **/
+.search{
+    width:auto;
+    justify-content:space-evenly;
+    display:flex;
+}
+
+
+/** symbol **/
+.searchw{
+    width:50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color:rgb(255, 166, 1);
+    border-end-end-radius:15px;
+    height:45px;
+    font-size:1rem;
+    border-start-end-radius:15px;
+}
+
+
+/** search  **/
+.navbar-search input[type=search]{
+    outline:none;
+    font-size:1rem;
+    padding:10px 10px;
+    border:none;
+    height:45px;
+    width:100%;
+    border-start-start-radius:15px;
+    border-end-start-radius:15px;
+}
+
+
+/**mange height in all screen and sizes **/ 
+@media (max-width:300px){
+    .search{
+        width:100px;
+    }
+}
+
+
+/**mange height in all screen and sizes **/ 
+@media (min-width:400px){
+    .search{
+        width:190px;
+    }
+}
+
+
+/**mange height in all screen and sizes **/ 
+@media (min-width:500px){
+    .search{
+        width:250px;
+    }
+}
+
+
+/**mange height in all screen and sizes **/ 
+@media (min-width:600px){
+    .search{
+        width:350px;
+    }
+}
+
+
+/**mange height in all screen and sizes **/ 
+@media (min-width:700px){
+    .search{
+        width:400px;
+    }
+}
+
+
+/**mange height in all screen and sizes **/ 
+@media (min-width:800px){
+    .search{
+        width:500px;
+    }
+}
+
+
+/**mange height in all screen and sizes **/ 
+@media (min-width:900px){
+    .search{
+        width:650px;
+    }
+}
+
+
+/**mange height in all screen and sizes **/ 
+@media (min-width:1000px){
+    .search{
+        width:850px;
+    }
+}
+
+
+/** option bar **/
+.optionbar{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    justify-content:space-evenly;
+    padding:10px ;
+    color:white;
+    font-size:1rem;
+    background-color:rgb(99, 141, 128);
+}
+
+
+/** optionbar a midificatio **/
+.optionbar a{
+    color:white;
+    text-decoration:none;
+    font-family: Arial;
+}
+
+
+/**mange height in all screen and sizes **/ 
+@media (max-width:300px){
+    .optionbar{
+        font-size:0.6rem;
+    }
+}
+
+
+/**marque setting**/
+marquee{
+    padding: 10px;
+    background-color:black;
+    color:white;
+}
+
+
+.toper{
+  padding-top:60px;
+}
+.toper h1{
+  color:red;
+}
+.mg{
+  text-align:center;
+}
+details{
+  padding-top:20px;
+  padding-bottom:20px;
+}
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+.container a{
+  padding-left:10%;
+  text-decoration:none;
+  color:black;
+}
+
+  </style>
+  <title></title>
+</head>
+<body>
+
+<!-- header -->
+<Header id="hr">
+  <!-- location -->
+<div class="navbar">
+    <div class="navbar-location">
+        <h1>  <i class="fa-solid fa-location-dot"></i> India</h1>
+    </div>
+    <!-- search and icon -->
+        <div class="navbar-search">
+            <div class="search">
+            <input type="search" placeholder="Click here to Search......."  id="search-input">
+        </div>
+        <div class="searchw"  id="search-button">
+            🔍
+        </div>
+        </div>
+</div>
+<!-- option -->
+<div class="optionbar">
+    <a href="home.html">Home</a>
+    <a href="https://wa.me//+919878610601">Contact</a>
+    <a href="admission.html">Admition</a>
+    <a href="ebooks.html">E-books</a>
+    <a href="online.html">Quiz</a>
+</div>
+<!-- marquee -->
+<div class="marque" id="how">
+    <marquee behavior="" direction="left"><pre><b> 👔  ਵਧੀਆ ਕੁਆਲਿਟੀ ਦੀ ਵਰਦੀ    📚   ਵਧੀਆ ਪੜ੍ਹਾਈ   👨‍🏫   15 ਤੋਂ ਵੀ ਜ਼ਿਆਦਾ ਮਾਹਿਰ ਅਧਿਆਪਕ     🎥  ਪ੍ਰੋਜੈਕਟ ਰਾਹੀਂ ਡਿਜਿਟਲ ਪੜ੍ਹਾਈ    🍝  ਵਧੀਆ ਕੁਆਲਿਟੀ ਦਾ ਖਾਣਾ    </b> </pre>  </marquee>
+</div>
+</Header>
+<header class="hero-section">
+<div class="hero-content">
+  <h2 class="fadeInText">Hindi</h2>
+  <p class="fadeInText">(Class - 10th)</p>
+  <button class="cta-button">Learn More</button>
+</div>
+</header>
+  <div class="container">
+    <details> <summary>
+      <b>Syllabus</b>
+    </summary>
+    <br>
+    <br>
+    <a href="https://www.punjabeducare.org/pseb-syllabus">
+<b>Hindi Syllabus</b> 
+    </a>
+    </details>
+  </div>
+  <div class="container">
+    <details> <summary>
+      <b>Text book </b>
+    </summary>
+    <br>
+    <br>
+    <a href="https://drive.google.com/file/d/1YyjTPtZimhviU8nuDeHcyorgM97BSYJu/view?usp=drivesdk">
+<b>Text book(1)</b> 
+    </a>
+      <br>
+      <br>
+      <a href="https://drive.google.com/open?id=18g1wFr9NAm_pMiTEq6Wf1aaxlZWo1hZg">
+        <b>Text book(2)</b>
+      </a>
+    </details>
+  </div>
+  <br>
+  <div class="container">
+    <details> <summary>
+      <b>Solution</b>
+    </summary>
+    <br>
+    <br>
+    <a href="https://drive.google.com/file/d/1VD7Jc9EAm023Fe_zOIFkIi8pXZ2sgpH-/view?usp=sharing">
+<b>पाठ-1 दोहावली</b> 
+    </a>
+    <br>
+    <br>
+    <a href="">
+      <b>पाठ-02 पदावली</b>
+      </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/file/d/1KjOaq5etIcznjy1zGJorJrlO0zhYXCDK/view?usp=sharing">
+      <b>पाठ-03 नीति के दोहे</b>
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/file/d/16ULV2zEu9HUKUIWdI07qrgb5p90QpEmj/view?usp=sharing">
+      <b>पाਠ-04 हम राज्य लिए मरते हैं </b>
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/file/d/1IfGPEOha6w-iYDjPAuS8lylf7ikCN55D/view?usp=sharing">
+      <b>पाठ-05 गाता खग</b>
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/file/d/1GXgl0Gj2lv-te_g3M1-X2vrRSJgW8Y8i/view?usp=sharing">
+      <b>पाठ-06 जड़ की मुस्कान</b>
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/file/d/1k3Okx5r-2wGmdf4c24Jh3SDIinESA1FR/view?usp=sharing">
+      <b>पाठ-07 ममता</b>
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/file/d/1AQqj21IbBwuO6vh-fnBNla1WJijmCpIn/view?usp=sharing">
+      <b>पाਠ-08 अशिक्षित का हृदय</b>
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/file/d/1FzUrHzb-coLnweWg7vKsl91jgBL83af5/view?usp=sharing">
+      <b>पाठ-09 दो कलाकार</b>
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/file/d/1RCTKT5L3uINg_P7tT9u2FLu1yO1qOrRc/view?usp=sharing">
+      <b>पाठ-10 नर्स</b>
+    </a>
+    <br>
+    <br>
+      <a href="https://drive.google.com/file/d/1ohobm2PkZwlxmrRa-iAxjum3zsLvWYto/view?usp=sharing">
+        <b>पाठ-11 माँ का कमरा</b>
+      </a>
+      <br>
+      <br>
+      <a href="https://drive.google.com/file/d/1EsmaO7qwGDyTTlwuvq23FTUcOpApZ8g3/view?usp=sharing">
+        <b>पाठ-12 मित्रता</b>
+      </a>
+      <br>
+      <br>
+      <a href="https://drive.google.com/file/d/1KjAw1CP_ROyYVDaYc3Q5ZIzbPxNJ6R1i/view?usp=sharing">
+        <b>पाਠ-13 मैं और मेरा देश</b>
+      </a>
+      <br>
+      <br>
+      <a href="https://drive.google.com/file/d/1VGI-QiSjAeP1iHCGRjnzOal3s3oMb3xL/view?usp=sharing">
+        <b>पाठ-14 राजेन्द्र बाबू</b>
+      </a>
+      <br>
+      <br>
+      <a href="https://drive.google.com/file/d/18vOYXkeeyQP0mqUwOcYEKysbMfgr3ux7/view?usp=sharing">
+        <b>पाठ-15 सदाचार का तावीज़</b>
+      </a>
+      <br>
+      <br>
+      <a href="https://drive.google.com/file/d/1Bca9cuO82hUi_okG5bc_r2L_1RzPdc4B/view?usp=sharing">
+        <b>पाठ-16 ठेले पर हिमालय </b>
+      </a>
+      <br>
+      <br>
+      <a href="https://drive.google.com/file/d/1WlG_5St3sa1_pcDogKwTGfDHUfwBEnAZ/view?usp=sharing">
+        <b>पाਠ-17 श्री गुरु नानक देव जी </b>
+      </a>
+      <br>
+      <br>
+      <a href="https://drive.google.com/file/d/1hP1QOgn-G804LOfIcuVDwwezt0F6WgE8/view?usp=sharing">
+        <b>पाठ-18 सूखी डाली </b>
+      </a>
+      <br>
+      <br>
+      <a href="https://drive.google.com/file/d/1A-O6bv5Oupbol6mRF3rqR5s3wycUJ4EA/view?usp=sharing">
+        <b>पाठ-19  देश के दुश्मन </b>
+      </a>
+                     <br>
+                     <br>
+                     <a href="#">
+                       <b>व्याकरण</b>
+                     </a>
+                     <br>
+                     <br>
+                     <a href="https://drive.google.com/file/d/1kvtZtzyzsFDp_Zx6Az7zTGcGIsRc6NH1/view?usp=sharing">
+                       <b class="j">संधि</b>
+                     </a>
+                     <br>
+                     <br>
+                     <a href="https://drive.google.com/file/d/1N5vZkcInuSnsIFbDv3s6ykpjOtBBH1Xl/view?usp=sharing">
+                       <b class="j">समरूपी भिन्नार्थक शब्द</b>
+                     </a>
+                     <br>
+                     <br>
+                     <a href="https://drive.google.com/file/d/1yoh0vaZYozIrMbUwyKBHUqVXn1qQ99kC/view?usp=sharing">
+                       <b class="j">विलोम शब्द</b>
+                     </a>
+                     <br>
+                     <br>
+                     <a href="https://drive.google.com/file/d/1exLEkIE2ghBXn1iVgAirVmQ-qaZSsxOT/view?usp=sharing">
+                       <b class="j">अनेक शब्दों के लिए एक शब्द</b>
+                     </a>
+                     <br>
+                     <br> 
+                        <a href="https://drive.google.com/file/d/1iZDebuxyXzxsDHtNeCvHWycpbfnxY_pN/view?usp=sharing">
+                          <b class="j">भाववाचक संज्ञा शब्द</b>
+                        </a>
+                        <br>
+                        <br>
+                        <a href="https://drive.google.com/file/d/1i6b6yEDLRihWTrDJ-joSaVzmt1A5DHhv/view?usp=sharing">
+                          <b class="j">पर्यायवाची शब्द</b>
+                        </a>
+                        <br>
+                        <br>
+                        <a href="https://drive.google.com/file/d/1Sunp3guALr1tmyejbzXBO80Nn5mvzvDZ/view?usp=sharing">
+                          <b class="j">मुहावरे – लोकोक्तियाँ</b>
+                        </a>
+                        <br>
+                        <br>
+                        <a href="https://drive.google.com/file/d/1SNMW30lxrcFANvWWx53MrQJgERaKOI89/view?usp=sharing">
+                          <b class="j">विशेषण निर्माण</b>
+                        </a>
+                        <br>
+                        <br>
+    </details>
+  </div>
+    <br>
+  <div class="container">
+  <details><summary>
+  <b>  Online Quiz </b>
+  </summary>
+  <br>
+  <br>
+  <a href="10thhindi.html">
+    <b>Start Quiz</b>
+  </a>
+  </details>
+</div>
+<footer>
+
+  <div class="footertopp">
+
+    <!-- other apps or sites -->
+    <div class="othersites">
+      <h1>Other Platform's</h1>
+      <br>
+      <div class="sites">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/share/rVnZCTwsAHi94ks1/?mibextid=qi2Omg"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://wa.me//+919878610601"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+  <!-- other links -->
+  <div class="footer-top">
+    <div class="footer-q">
+     <a href="about.html"> <h1>About</h1></a>
+     <br>
+    <a href="home.html">  <h1>home</h1></a>
+    <br>
+    <a href="student.html">  <h1>Learning Corner</h1></a><br>
+       <a href="https://wa.me//+919878610601"> <h1>Contact</h1></a>
+       <br>
+  <a href="admission.html">    <h1>Admition</h1></a>
+  <br>
+    </div>
+    <div class="footer-w">
+   <a href="ebooks.html">   <h1>E-book</h1></a>
+   <br>
+   <a href="online.html">   <h1>Quiz</h1></a>
+   <br>
+<a href="https://www.abcya.com/">      <h1>Games</h1></a>
+<br>
+   <a href="https://www.punjabeducare.org/pseb-syllabus">   <h1>Syllabus</h1></a>
+   <br>
+  <a href="result.html">    <h1>result</h1></a>
+    </div>
+  </div>
+    <br>
+  <div class="newu">
+    <h4>Programming Language</h4>
+    <br>
+    <div class="new">
+    <h3>Html</h3>
+    <h3>Css</h3>
+    <h3>Javascript</h3>
+    </div>
+  </div>
+  
+  <!-- site privacy and non copy content proffs -->
+  <div class="footer1">
+    <div class="footerqw"><a href="license.html">License</a> 
+    <a href="privacy.html">Privacy</a>
+    <a href="https:\\wa.me\\+918264751918">Contact with Web Designer</a>
+    <a href="tercon.html">Terms and condition</a>
+    </div>
+  </div>
+  &copy;Govt high school khunde halal.All rights reserved
+</footer>
+</body>
+
+</html>

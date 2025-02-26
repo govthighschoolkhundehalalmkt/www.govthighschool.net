@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="form.css">
+  <style>
+    .container {
+            margin-right:0px ;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .container h2{
+          color:#0034FF;
+          text-align:center;;
+        }
+        button {
+
+  background-color: #04AA6D;
+
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+}
+
+button:hover {
+  opacity: 0.8;
+  }
+input[type=text], input[type=number],input[type=password], input[type=email]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.radi input{
+  vertical-align:middle;
+}
+  </style>
+</head>
+<body>
+<div class="container">
+  <h2>Science Practice Test</h2>
+</div>
+<br>
+<div class="container">
+  <form method="post" name="google-sheet" id="quizForm">
+    <br>
+    <label for="Name"><b>Enter Your Name: </b></label>
+    <input type="text" placeholder="Name....." name="Name" required><br> <br>
+    <label for="E-Punjab ID"><b>Enter Your E-Punjab ID:</b></label>
+    <input type="number" placeholder="E-Punjab ID....." name="ID"  required><br> <br>
+    <label for="Class"><b>Enter your Class Name:</b></label>
+    <input type="text"  placeholder="Class Name....." name="Class Name"  required>
+    <br> <br>
+    <label for="Village"><b>Enter your Village Name:</b></label>
+    <input type="text" placeholder="Village Name....." name="Village Name" required>
+    <br> <br>
+  
+  <br>
+  
+    <label for=""><b>1.  ਹਵਾ ਦੁਆਰਾ ਮਿਸ਼ਰਨ ਦੇ ਭਾਰੀ ਅਤੇ ਹਲਕੇ ਕਣਾਂ ਨੂੰ ਨਿਖੇੜਨ ਦੀ ਕਿਹੜੀ ਵਿਧੀ ਨਾਲ ਵੱਖ ਕੀਤਾ ਜਾਂਦਾ ਹੈ। </b></label> <br> <br> <div class="radi">
+    <input type="radio" name="1"  id="q1" value="oranges" id="q1"><b> ਹੱਥ ਨਾਲ ਚੁਗਣਾ<br> <br>
+    <input type="radio" name="1" id="q1" value="sapphires"> ਥਰੈਸ਼ਿੰਗ<br> <br>
+    <input type="radio" name="1" id="q1" value="gold"> ਛਾਣਨਾ<br> <br>
+    <input type="radio" name="1" id="q1" value="q"> ਉਡਾਉਣਾ</b> <br> </div>
+  
+  <br>
+  
+  <label for="2."><b>2. ਮਨੁੱਖ ਦੇ ਸਰੀਰ ਵਿੱਚ ਸੂਰਜ ਦੀ ਰੌਸ਼ਨੀ ਦੀ ਮਦਦ ਨਾਲ ਵਿਟਾਮਿਨ D ਬਣਦਾ ਹੈ।</b></label> <br> <br> <div class="radi">
+    <input type="radio"  id="q2" name="q2" value="w"><b> ਸਹੀ<br> <br>
+    <input type="radio"  id="q2" name="q2" value="False"> ਗ਼ਲਤ<br> <br> </div>
+  <br>
+  <label for="3."><b>3. ਹੇਠ ਲਿਖਿਆਂ ਵਿਚੋਂ ਕਿਹੜਾ ਪਾਰਦਰਸ਼ੀ ਹੈ।</b></label> <br> <br> <div class="radi">
+    <input type="radio" name="q3" id="q3" value="Kagawa"><b> ਲੱਕੜੀ<br> <br>
+    <input type="radio" name="q3" id="q3" value="Author"> ਕਾਗਜ਼<br> <br>
+    <input type="radio" name="q3" id="q3" value="e"> ਕੱਚ<br> <br>
+    <input type="radio" name="q3" id="q3" value="4"> ਪਲਾਸਟਿਕ</b> <br> </div>
+
+  <br>
+
+  <label for="4."><b>4. ਅੰਬ ਦਾ ਪੌਦਾ ਇੱਕ ________ ਹੈ।</b></label> <br> <br> <div class="radi">
+    <input type="radio" name="q4" id="q4" value="S+V1 (s,es)"><b> ਬੂਟੀ<br> <br>
+    <input type="radio" name="q4" id="q4" value="S+V1"> ਝਾੜੀ<br> <br>
+    <input type="radio" name="q4" id="q4" value="r">  ਰੁੱਖ<br> <br>
+    <input type="radio" name="q4" id="q4" value="S+V3"> ਜੜ੍ਹ</b> <br> </div>
+
+  <br>
+  
+  <label for="5."><b>5. ਕੈਕਟਸ ਇੱਕ - </b></label> <br> <br> <div class="radi">
+    <input type="radio" name="q5" id="q5" value="t"><b> ਮਾਰੂਥਲੀ ਪੌਦਾ<br> <br>
+    <input type="radio" name="q5" id="q5" value="have known" ><b> ਨਿਖੇੜਕ</b> <br> <br>
+    <input type="radio" name="q5" id="q5" value="knows"> ਜਲੀ ਪੌਦਾ<br> <br>
+    <input type="radio" name="q5" id="q5" value="knew">  ਜੜ੍ਹੀ-ਬੂਟੀ</b> <br>
+  </div> <br>
+  <center>
+    <input type="username" id="score" name="Score"><br>
+     <div class="b09">  <li> <button type="button" onclick="submitQuiz()">Score</button></li><li>
+    <button type="submit">Submit</button></li></div></center>
+</form>
+  <div id="result" class="80" style="margin-top: 20px;"></div>
+<script>
+  function submitQuiz() {
+    const correctAnswers = {
+      q1: 'q',
+      q2: 'w' ,
+      q3:  'e',
+      q4:  'r',
+      q5:  't'
+    };
+
+    let score = 0;
+    const form = document.getElementById('quizForm');
+    const result = document.getElementById('result');
+
+    for (let question in correctAnswers) {
+      const userAnswer = form[question].value.trim().toLowerCase();
+      if (userAnswer === correctAnswers[question]) {
+        score++;
+      }
+    }
+
+    const totalQuestions = Object.keys(correctAnswers).length;
+    const scorePercentage = (score / totalQuestions) * 100;
+    let feedback = '';
+
+    if (scorePercentage === 100) {
+      feedback = 'Very Good!';
+    } else if (scorePercentage >= 50) {
+      feedback = 'Not Good.';
+    } else {
+      feedback = 'Needs Improvement.';
+    }
+
+    result.textContent = `score: ${score}/${totalQuestions}. ${feedback}`;
+
+    document.getElementById('score').value = score;
+  }
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwuvZawWBC4MtMmyoaWyf00bDogI4npp_95LXPb4su_G17EJek3tU9BvU12Zw-D3Mw6/exec'
+  const form = document.forms['google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+
+</html>

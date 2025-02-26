@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="form.css">
+  <style>
+    .container {
+            margin-right:0px ;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .container h2{
+          color:#0034FF;
+          text-align:center;;
+        }
+        button {
+
+  background-color: #04AA6D;
+
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+}
+
+button:hover {
+  opacity: 0.8;
+  }
+input[type=text], input[type=number],input[type=password], input[type=email]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.radi input{
+  vertical-align:middle;
+}
+  </style>
+</head>
+<body>
+<div class="container">
+  <h2>हिंदी अभ्यास परीक्षण</h2>
+</div>
+<br>
+<div class="container">
+  <form method="post" name="google-sheet" id="quizForm">
+    <br>
+    <label for="Name"><b>अपना नाम दर्ज करें: </b></label>
+    <input type="text" placeholder="Name....." name="Name" required><br> <br>
+    <label for="E-Punjab ID"><b>अपनी ई-पंजाब आईडी दर्ज करें:</b></label>
+    <input type="number" placeholder="E-Punjab ID....." name="ID"  required><br> <br>
+    <label for="Class"><b>अपनी कक्षा का नाम दर्ज करें:</b></label>
+    <input type="text"  placeholder="Class Name....." name="Class Name"  required>
+    <br> <br>
+    <label for="Village"><b>अपने गांव का नाम दर्ज करें:</b></label>
+    <input type="text" placeholder="Village Name....." name="Village Name" required>
+    <br> <br>
+  
+  <br>
+  
+    <label for=""><b>1. 'दोहाली' किस कवि की रचना है?  </b></label> <br> <br> <div class="radi">
+    <input type="radio" name="1"  id="q1" value="बिहारी" id="q1"><b> बिहारी<br> <br>
+    <input type="radio" name="1" id="q1" value="तुलसीदास"> तुलसीदास <br> <br>
+    <input type="radio" name="1" id="q1" value="रहीम"> रहीम<br> <br>
+    <input type="radio" name="1" id="q1" value="कोई नहीं"> इनमें से कोई नहीं</b> <br> </div>
+  
+  <br>
+  
+  <label for="2."><b>2. महेश अस्पताल के किस वार्ड में दाखिल था? </b></label> <br> <br> <div class="radi">
+    <input type="radio"  id="q2" name="q2" value="वार्ड नंबर 10 में"><b> वार्ड नंबर 10 में<br> <br>
+    <input type="radio"  id="q2" name="q2" value="वार्ड नंबर 11 में"> वार्ड नंबर 11 में<br> <br>
+    <input type="radio" name="q2" id="q2" value="वार्ड नंबर 12 में"> वार्ड नंबर 12 में <br> <br>
+    <input type="radio" name="q2" id="q2" value="वार्ड नंबर 13 में"> वार्ड नंबर 13 में</b> <br> </div>
+  <br>
+  <label for="3."><b>3. कहानी 'ममता' के अनुसार शेरशाह सूरी और शहंशाह हुमायूं के बीच कौन-सा युद्ध हुआ था? </b></label> <br> <br> <div class="radi">
+    <input type="radio" name="q3" id="q3" value="प्लासी का युद्ध"><b> प्लासी का युद्ध <br> <br>
+    <input type="radio" name="q3" id="q3" value="चौसा युद्ध"> चौसा युद्ध<br> <br>
+    <input type="radio" name="q3" id="q3" value="बक्सर का युद्ध"> बक्सर का युद्ध<br> <br>
+    <input type="radio" name="q3" id="q3" value="पानीपत का युद्ध"> पानीपत का युद्ध</b> <br> </div>
+
+  <br>
+
+  <label for="4."><b>4. निम्नलिखित में सही संधि चुनें :-- महा+आत्मा </b></label> <br> <br> <div class="radi">
+    <input type="radio" name="q4" id="q4" value="महात्म्य"><b> महात्म्य<br> <br>
+    <input type="radio" name="q4" id="q4" value="महात्मा"> महात्मा<br> <br>
+    <input type="radio" name="q4" id="q4" value="महातमा"> महातमा<br> <br>
+    <input type="radio" name="q4" id="q4" value="महातम"> महातम</b> <br> </div>
+
+  <br>
+  
+  <label for="5."><b>5. भाववाचक संज्ञा चुनें:-मित्र </b></label> <br> <br> <div class="radi">
+    <input type="radio" name="q5" id="q5" value="मित्रता"><b> मित्रता<br> <br>
+    <input type="radio" name="q5" id="q5" value="मित्रो" ><b>मित्रो</b> <br> <br>
+    <input type="radio" name="q5" id="q5" value="मीत"> मीत<br> <br>
+    <input type="radio" name="q5" id="q5" value="मित्र"> मित्र</b> <br>
+  </div> <br>
+  <center>
+    <input type="username" id="score" name="Score"><br>
+     <div class="b09">  <li> <button type="button" onclick="submitQuiz()">अंक</button></li><li>
+    <button type="submit">जमा करना</button></li></div></center>
+</form>
+  <div id="result" class="80" style="margin-top: 20px;"></div>
+<script>
+  function submitQuiz() {
+    const correctAnswers = {
+      q1: 'तुलसीदास',
+      q2: 'वार्ड नंबर 11 में',
+      q3:  'चौसा युद्ध',
+      q4:  'महात्मा',
+      q5:  'मित्रता'
+    };
+
+    let score = 0;
+    const form = document.getElementById('quizForm');
+    const result = document.getElementById('result');
+
+    for (let question in correctAnswers) {
+      const userAnswer = form[question].value.trim().toLowerCase();
+      if (userAnswer === correctAnswers[question]) {
+        score++;
+      }
+    }
+
+    const totalQuestions = Object.keys(correctAnswers).length;
+    const scorePercentage = (score / totalQuestions) * 100;
+    let feedback = '';
+
+    if (scorePercentage === 100) {
+      feedback = 'Very Good!';
+    } else if (scorePercentage >= 50) {
+      feedback = 'Not Good.';
+    } else {
+      feedback = 'Needs Improvement.';
+    }
+
+    result.textContent = `score: ${score}/${totalQuestions}. ${feedback}`;
+
+    document.getElementById('score').value = score;
+  }
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwuvZawWBC4MtMmyoaWyf00bDogI4npp_95LXPb4su_G17EJek3tU9BvU12Zw-D3Mw6/exec'
+  const form = document.forms['google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+
+</html>
