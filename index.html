@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login</title>
+  <style>
+  body{
+    background-image:url("14.jpg");
+    background-repeat:none;
+    background-size:cover;
+    color:white ;
+  }
+    .container{
+      height:85vh;
+      padding: 25px 25px;
+      background: transparent;
+    }
+    input[type=text]{
+      width:100%;
+      outline: none;
+      border-radius:20px;
+      padding: 5px 5px;
+      font-size:12px;
+      height:25px;
+      color: white;
+      border: 2px solid grey;
+      background-color:transparent;
+
+    }
+
+    input[type=email] {
+    width:100%;
+    color:white;
+  outline: none;
+    border:none;
+  border-radius:20px;
+  padding: 5px 5px;
+  font-size:12px;
+  height:25px;
+  border: 2px solid grey;
+  background-color:transparent;
+}
+.btn{
+  border:none;
+  background-color: transparent;
+  color:white;
+}
+#btn{
+  padding-left:50px;
+}
+  </style>
+</head>
+<body>
+ <div class="container">
+   <br>
+   <br>
+   <br>
+   <center>
+        <h3><strong>Login / Sign up Page</strong></h3>
+        </center>
+        <br>
+        <br>
+        <br>
+   <form action="home.html" method="GET" >
+     <label for="Name"><b>Enter your name :-</b></label>
+     <br>
+     <br>
+     <input type="text" name="name" id="Username" required>
+     <br>
+     <br>
+     <br>
+     <br>
+     <label for="Village Name"><b>Enter your village name :‐</b></label>
+     <br>
+     <br>
+     <input type="text" name="village" id="village" required>
+     <br>
+     <br>
+     <br>
+     <br>
+     <label for="Gmail"><b>Enter your G-mail address :-</b></label>
+     <br>
+     <br>
+     <input type="email" name="email" id="email" value="" required>
+     <br>
+     <br>
+     <br>
+     <br>
+     <center>
+     <button type="submit" class="btn" value="submit"><b>Submit data</b></button>
+     <button type="reset" class="btn" id="btn"><b>Reset data</b></button>
+     </center>
+   </form>
+ </div>
+</body>
+
+</html>

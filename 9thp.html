@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="all.css">
+  <style>
+  .container0 a {
+    padding-left: 10%;
+    text-decoration: none;
+    color: black;
+  }
+  .container0 {
+    margin-right: 0px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .container {
+    margin-right: 0px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  details{
+    border-top:2px solid black ;
+    border-bottom:2px solid black ;
+  }
+/** use for body tag only **/
+
+*{
+
+    margin: 0;
+    font-family:Arial;
+    border:border-box;
+    text-decoration:none;
+}
+
+
+/**top content **/
+.navbar{
+    padding:10px ;
+    justify-content:space-evenly;
+    height:40px;
+    display:flex;
+    background-color:rgb(25,25,25);
+    color:white;
+    font-size:0.57rem;
+    align-items:center;
+}
+
+
+/** top location **/
+.navbar-location{
+    display:flex;
+    justify-content:center;
+    justify-items:center;
+    text-align:center;
+}
+
+
+/** top location border **/
+.navbar-location h1{
+    padding: 10px;
+    border:2px solid transparent;
+}
+
+/** top location border **/
+.navbar-location h1:hover{
+    border-radius:15px;
+    border:2px solid white;
+}
+
+
+/** make search and symbol **/
+.navbar-search{
+    align-items:center;
+    display:flex;
+    justify-content: space-evenly;
+    justify-content:center;
+    justify-items:center;
+}
+
+
+/** search **/
+.search{
+    width:auto;
+    justify-content:space-evenly;
+    display:flex;
+}
+
+
+/** symbol **/
+.searchw{
+    width:50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color:rgb(255, 166, 1);
+    border-end-end-radius:15px;
+    height:45px;
+    font-size:1rem;
+    border-start-end-radius:15px;
+}
+
+
+/** search  **/
+.navbar-search input[type=search]{
+    outline:none;
+    font-size:1rem;
+    padding:10px 10px;
+    border:none;
+    height:45px;
+    width:100%;
+    border-start-start-radius:15px;
+    border-end-start-radius:15px;
+}
+
+
+/**mange height in all screen and sizes **/ 
+@media (max-width:300px){
+    .search{
+        width:100px;
+    }
+}
+
+
+/**mange height in all screen and sizes **/ 
+@media (min-width:400px){
+    .search{
+        width:190px;
+    }
+}
+
+
+/**mange height in all screen and sizes **/ 
+@media (min-width:500px){
+    .search{
+        width:250px;
+    }
+}
+
+
+/**mange height in all screen and sizes **/ 
+@media (min-width:600px){
+    .search{
+        width:350px;
+    }
+}
+
+
+/**mange height in all screen and sizes **/ 
+@media (min-width:700px){
+    .search{
+        width:400px;
+    }
+}
+
+
+/**mange height in all screen and sizes **/ 
+@media (min-width:800px){
+    .search{
+        width:500px;
+    }
+}
+
+
+/**mange height in all screen and sizes **/ 
+@media (min-width:900px){
+    .search{
+        width:650px;
+    }
+}
+
+
+/**mange height in all screen and sizes **/ 
+@media (min-width:1000px){
+    .search{
+        width:850px;
+    }
+}
+
+
+/** option bar **/
+.optionbar{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    justify-content:space-evenly;
+    padding:10px ;
+    color:white;
+    font-size:1rem;
+    background-color:rgb(99, 141, 128);
+}
+
+
+/** optionbar a midificatio **/
+.optionbar a{
+    color:white;
+    text-decoration:none;
+    font-family: Arial;
+}
+
+
+/**mange height in all screen and sizes **/ 
+@media (max-width:300px){
+    .optionbar{
+        font-size:0.6rem;
+    }
+}
+
+
+/**marque setting**/
+marquee{
+    padding: 10px;
+    background-color:black;
+    color:white;
+}
+
+
+.toper{
+  padding-top:60px;
+}
+.toper h1{
+  color:red;
+}
+.mg{
+  text-align:center;
+}
+details{
+  padding-top:20px;
+  padding-bottom:20px;
+}
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+.container a{
+  padding-left:10%;
+  text-decoration:none;
+  color:black;
+}
+.j{
+    padding-left:14%;
+  }
+  </style>
+  <title></title>
+</head>
+<body>
+  
+<!-- header -->
+<Header id="hr">
+  <!-- location -->
+<div class="navbar">
+    <div class="navbar-location">
+        <h1>  <i class="fa-solid fa-location-dot"></i> India</h1>
+    </div>
+    <!-- search and icon -->
+        <div class="navbar-search">
+            <div class="search">
+            <input type="search" placeholder="Click here to Search......."  id="search-input">
+        </div>
+        <div class="searchw"  id="search-button">
+            🔍
+        </div>
+        </div>
+</div>
+<!-- option -->
+<div class="optionbar">
+    <a href="home.html">Home</a>
+    <a href="https://wa.me//+919878610601">Contact</a>
+    <a href="admission.html">Admition</a>
+    <a href="ebooks.html">E-books</a>
+    <a href="online.html">Quiz</a>
+</div>
+<!-- marquee -->
+<div class="marque" id="how">
+    <marquee behavior="" direction="left"><pre><b> 👔  ਵਧੀਆ ਕੁਆਲਿਟੀ ਦੀ ਵਰਦੀ    📚   ਵਧੀਆ ਪੜ੍ਹਾਈ   👨‍🏫   15 ਤੋਂ ਵੀ ਜ਼ਿਆਦਾ ਮਾਹਿਰ ਅਧਿਆਪਕ     🎥  ਪ੍ਰੋਜੈਕਟ ਰਾਹੀਂ ਡਿਜਿਟਲ ਪੜ੍ਹਾਈ    🍝  ਵਧੀਆ ਕੁਆਲਿਟੀ ਦਾ ਖਾਣਾ    </b> </pre>  </marquee>
+</div>
+</Header>
+<header class="hero-section">
+<div class="hero-content">
+  <h2 class="fadeInText">Punjabi</h2>
+  <p class="fadeInText">(Class - 9th)</p>
+  <button class="cta-button">Learn More</button>
+</div>
+</header>
+  <div class="container">
+    <details> <summary>
+      <b>Syllabus</b>
+    </summary>
+    <br>
+    <br>
+    <a href="https://www.punjabeducare.org/pseb-syllabus">
+<b>Science Syllabus</b> 
+    </a>
+    </details>
+  </div>
+  <div class="container">
+    <details> <summary>
+      <b>Text book </b>
+    </summary>
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=1wXHjkmJQwxsiXjzHSNdbDfKJaHVJdw96&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+<b>ਆਧੁਨਿਕ ਪੰਜਾਬੀ-ਵਿਆਕਰਨ ਅਤੇ ਲੇਖ-ਰਚਨਾ</b> 
+    </a>
+      <br>
+      <br>
+      <a href="https://drive.google.com/open?id=1wa9qiI_sYymWnbZcUJQXR3j8OFudjio1&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+        <b>ਇੱਕ ਹੋਰ ਨਵਾਂ ਸਾਲ (ਨਾਵਲ)</b>
+      </a>
+          <br>
+          <br>
+          <a href="https://drive.google.com/open?id=1wdvO1D1MQ9tTckWheox4aM7h10kRx-fp&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+            <b>ਸਾਹਿਤ ਮਾਲਾ</b>
+          </a>
+              <br>
+              <br>
+              <a href="https://drive.google.com/open?id=1wo18Pb-ilAMs_rhCHvxtEIAJSBXAh0N9&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+                <b>ਵੰਨਗੀ</b>
+              </a>
+    </details>
+  </div>
+  <br>
+  <div class="container">
+    <details> <summary>
+      <b>Solution</b>
+    </summary>
+    <br>
+    <br>
+    <a href="#">
+      <b>ਸਾਹਿਤ ਮਾਲਾ ਕਵਿਤਾ ਭਾਗ</b>
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=1pPolsArvD4Df_xFtRLT_3iNg9sXqMLzN&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+<b class="j">1.ਭਾਈ ਵੀਰ ਸਿੰਘ</b> 
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=1pLXJ7m5xs2_AUT24ROdz8wFjaCo53IF3&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+      <b class="j">2.ਧਨੀ ਰਾਮ ਚਾਤ੍ਰਿਕ</b>
+      </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=1pIq5RkbVn4U18ougzXfMdogPejUkwy4p&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+      <b class="j">3.ਪ੍ਰੋ. ਪੂਰਨ ਸਿੰਘ</b>
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=1qI5e1aEUWEyZ1bPl4lmFmyqn00OgFRE0&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+      <b class="j">4.ਸ. ਸ. ਚਰਨ ਸਿੰਘ 'ਸ਼ਹੀਦ' </b>
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=1qBaKszJGaw8K5O4jZH3AqdANGM_ESGBk&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+      <b class="j">5.ਡਾ. ਦੀਵਾਨ ਸਿੰਘ ਕਾਲੇਪਾਣੀ</b>
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=1q3DT7CSBXV_Ff5fdGRNFPeuJiRXnUPP8&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+      <b class="j">6.ਫ਼ੀਰੋਜ਼ਦੀਨ ਸ਼ਰਫ਼</b>
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=1q61yyij0XQn5FwmkoOxPNPZZFb4im6LJ&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+      <b class="j">7.ਗੁਰਮੁਖ ਸਿੰਘ ਮੁਸਾਫ਼ਿਰ </b>
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=1r-p4SXvFfDR0_XQ3ZQRWpAct4X5AkhMR&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+      <b class="j">8.ਵਿਧਾਤਾ ਸਿੰਘ ਤੀਰ</b>
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=1r5YAqJsqrXpmBy2eHZWE7yTcx-j264yH&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+      <b class="j">9.ਪ੍ਰੋ. ਮੋਹਨ ਸਿੰਘ</b>
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=1r6VwaQc2rVl9wLw_kHiT664IAuNJIFzY&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+      <b class="j">10.ਨੰਦ ਲਾਲ ਨੂਰਪੁਰੀ</b>
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=1rAl6A5ueAq1YAoh0ZvZXvmoUXdW455Mh&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+      <b class="j">11.ਬਾਵਾ ਬਲਵੰਤ</b>
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=1IShFwVZ1nvtPrn_6ZX84tjixU_tbvIpD&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+<b class="j">12.ਪ੍ਰੀਤਮ ਸਿੰਘ ਸਫ਼ੀ</b> 
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=1IShVAuX_cf2b9dRGAiA32F1IzvZkGCra&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+      <b class="j">13.ਅੰਮ੍ਰਿਤਾ ਪ੍ਰੀਤਮ</b>
+      </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=1IKvTXuFqsCn_wzWTa-PVBfjRcYRjiA32&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+      <b class="j">14.ਸ਼ਿਵ ਕੁਮਾਰ ਬਟਾਲਵੀ</b>
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=1IP3vXt12rXSqaHHXcECJHIZUxUeM5WD2&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+      <b class="j">15.ਸੁਰਜੀਤ ਪਾਤ</b>
+    </a>
+    <br>
+    <br>
+    <br>
+    <a href="#">
+      <b>ਸਾਹਿਤ ਮਾਲਾ ਵਾਰਤਕ ਭਾਗ</b>
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=1p1D64olyYbho1jPp8WR_VSyKM3ppOV6-&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+      <b class="j">1.ਪੁਰਾਤਨ ਜਨਮ ਸਾਖੀ </b>
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=1oxZT3lcWI65_cmJyTAPpQvfVhzbWglvH&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+      <b class="j">2.ਗਲੀ ਵਿੱਚ</b>
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=1pwhTiTV6ABDhgiv1cxTlnMYMrIW6Sj7q&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+      <b class="j">3.ਸਮਯ ਦਾ ਅਰਘ' ਤੇ 'ਵੱਡਿਆਂ ਦਾ ਆਦਰ' </b>
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=1puhSmNMW3J5GB5oQUMNzYaaHLqaw2IzE&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+      <b class="j">4.ਢੋਲ-ਢਮੱਕਾ</b>
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=1stBICLHJmm09RmPO1axqanHPH0PgCkJR&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+      <b class="j">5.ਵਹਿਮੀ ਤਾਇਆ</b>
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=1swcP7JVJxNJd0rYu9hZQEVb3hSgpqr71&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+      <b class="j">6.ਮੁੜ ਵੇਖਿਆ ਪਿੰਡ</b>
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=1t0JZ5q9MEi3T_FWq5lp0fMs-HhxjdQgr&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+      <b class="j">7.ਖੁਸ਼ੀਆਂ ਆਪੇ ਨਹੀਂ ਆਉਂਦੀਆਂ</b>
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=1t87Ymr_kOyn6qF76P4kZKBSMIsFN0YcG&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+      <b class="j">8.ਬੇਬੇ ਜੀ</b>
+    </a>
+    <br>
+    <br>
+    <a href="#">
+      <b>ਵੰਨਗੀ ਕਹਾਣੀ ਭਾਗ</b>
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=1pI6qDyOUhTxcsSzj78Rv8H873hD3tuwD&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+<b class="j">1. ਕੱਲੋ ਕਹਾਣੀ </b> 
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=1pD7lS832H1Ca71yjRwWfeG6ts3BI-Yzi&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+      <b class="j">2.ਜਨਮ ਦਿਨ</b>
+      </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=1puTouEBhx5I8JISoyNv_jY8-4qJoJK6j&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+      <b class="j">3.ਬਸ਼ੀਰਾ </b>
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=1pn9Wu2F0nk5t9PKxvnJnrKbHB-KVn417&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+      <b class="j">4.ਮੁਰਕੀਆਂ</b>
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=1z401NvvVLNjZ9O13Sag4GyC4-Lgs9Y8p&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+      <b class="j">5.ਸਾਂਝੀ ਕੰਧ</b>
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=1z5WnfAqW26hsvSYUu_yF5gB8mfJLuev9&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+      <b class="j">6.ਬੱਸ ਕੰਡਕਟਰ</b>
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=1z6Schy8VZr3IjrCO9adoloHKCmfP0OiZ&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+      <b class="j">7.ਬਾਕੀ ਸਭ ਸੁੱਖ-ਸਾਂਦ ਹੈ</b>
+    </a>
+    <br>
+    <br>
+    <a href="#">
+      <b>ਵੰਨਗੀ ਇਕਾਂਗੀ ਭਾਗ</b>
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=1ov4bLk_QhnEPbT05J2IOYNOa8ww-1xnt&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+<b class="j">1.ਗਊਮੁਖਾ-ਸ਼ੇਰਮੁਖਾ</b> 
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=1pq4LjtLtjpI06N2gkO9V7KoPv0xXVAy5&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+      <b class="j">2.ਪਰਤ ਆਉਣ ਤੱਕ</b>
+      </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=1pmXViigX0gU0xWyoW96s-sHdGj1RSvZf&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+      <b class="j">3.ਮੌਨਧਾਰੀ</b>
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=1zCchQY5v-OiUHlq0TvvovixCwKG7QSpK&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+      <b class="j">4.ਗ਼ੁਬਾਰੇ</b>
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=1zMDAqyD2-Z7vpjotxwSXT4E8dp5lS6hJ&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+      <b class="j">5.ਸਿਰਜਣਾ</b>
+    </a>
+    <br>
+    <br>
+    <a href="#">
+      <b>ਨਾਵਲ</b>
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=1pfJKr8DCh-Ps9nPB3N9zTQGMrJi31sEE&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+      <b class="j">1. ਵਾਰਤਾਲਾਪ ਦੀ ਪ੍ਰਸੰਗ ਵਿਆਖਿਆ - ਸਵੇਰ ਭਾਗ</b>
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=1J2iESCLtUOjxlMBNpdkb3LZO0oxKBwgE&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+      <b class="j">2.ਵਾਰਤਾਲਾਪ ਦੀ ਪ੍ਰਸੰਗ ਵਿਆਖਿਆ - ਦੁਪਹਿਰ ਭਾਗ</b>
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=1JAsf23NGYCukm4ZvlY4BpkjH836ZEX4i&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+      <b class="j">3. ਵਾਰਤਾਲਾਪ ਦੀ ਪ੍ਰਸੰਗ ਵਿਆਖਿਆ - ਸ਼ਾਮ ਭਾ</b>
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=1JCHecNu_f6EdKNfa3Q6sRGu4vqKn_OFb&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+      <b class="j">4.ਅਭਿਆਸੀ ਪ੍ਰਸ਼ਨ - ਨਾਵਲ </b>
+    </a>
+    <br>
+    <br>
+    <br>
+    <hr width="100%">
+       <a href="#">
+         <b>ਲੇਖ</b>
+       </a>
+       <br>
+       <br>
+       <a href="https://drive.google.com/open?id=1ot36phR__Jbb5nMU7fdMxdgVypKoPeMm&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+         <b class="j">1:-ਵਿਸਾਖੀ</b>
+       </a>
+       <br>
+       <br>
+       <a href="https://drive.google.com/open?id=1osB907sQ1c1OUMvhj-V2x2J1LpU8G6V3&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+         <b class="j">2:-ਡਾ. ਭੀਮ ਰਾਓ ਅੰਬੇਦਕਰ</b>
+       </a>
+       <br>
+       <br>
+       <a href="https://drive.google.com/open?id=1oouxjsedMzGJkB4Gh94lOUfHeqfqx-RE&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+         <b class="j">3:-ਪ੍ਰਦੂਸ਼ਣ ਦੀ ਸਮੱਸਿਆ </b>
+       </a>
+       <br>
+       <br>
+       <a href="https://drive.google.com/open?id=1oljiUMfjDJ0A35D_TW9rffFfJDdNFVuD&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+         <b class="j">4:-ਮਨੁੱਖ ਅਤੇ ਵਿਗਿਆਨ</b>
+       </a>
+       <br>
+       <br>
+       <a href="https://drive.google.com/open?id=1r2F3UZL2xVxBbvpRqUMgkyHJj4THPyya&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+         <b class="j">5:-ਕਰਤਾਰ ਸਿੰਘ ਸਰਾਭਾ </b>
+       </a>
+       <br>
+       <br>
+       <a href="https://drive.google.com/open?id=1r0xtRxGg9qXAXDPzCBIWaB5IrK8tDulT&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+         <b class="j">6:-ਸੰਚਾਰ ਦੇ ਸਾਧਨ </b>
+       </a>
+       <br>
+       <br>
+       <a href="https://drive.google.com/open?id=1r0ozizrp6zeklQ7HqtSfzt00n0R-gQA7&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+         <b class="j">7:-ਪੰਦਰਾਂ ਅਗਸਤ </b>
+       </a>
+       <br>
+       <br>
+       <a href="https://drive.google.com/open?id=1qyb8MODcwzTa3_4-Nbg5Zxcgq9kHO7Av&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+         <b class="j">8:-ਸ਼ਹੀਦ ਭਗਤ ਸਿੰਘ </b>
+       </a>
+       <br>
+       <br>
+       <a href="https://drive.google.com/open?id=1qow6MEbihojzv-WfecayYXLwLBUQIVD7&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+         <b class="j">9:-ਮਿਠਤੁ ਨੀਵੀ ਨਾਨਕਾ ਗੁਣ ਚੰਗਿਆਈਆ ਤਤੁ</b>
+       </a>
+       <br>
+       <br>
+       <a href="https://drive.google.com/open?id=1qdjPwxM5B3eJWJ3H5YzPNdXZQBYZaQjN&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fshttps://drive.google.com/open?id=1qd-fbWJ9Q5MtmW-ubNLMBRIDA0p9Mb7W&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+         <b class="j">10:-ਦਿਵਾਲ਼ੀ </b>
+       </a>
+       <br>
+       <br>
+       <a href="https://drive.google.com/open?id=1qdjPwxM5B3eJWJ3H5YzPNdXZQBYZaQjN&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fshttps://drive.google.com/open?id=1qd-fbWJ9Q5MtmW-ubNLMBRIDA0p9Mb7W&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+         <b class="j">11:-ਸ੍ਰੀ ਗੂਰੁ ਨਾਨਕ ਦੇਵ ਜੀ </b>
+       </a>
+       <br>
+       <br>
+       <a href="https://drive.google.com/open?id=1qc3HsGWYtX8TTb7CPPt71wEm6UIfz7qb&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fshttps://drive.google.com/open?id=1qZw_H8WkvxHEfqVJRpKWtHExQkH8rJBe&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+         <b class="j">12:-ਸਾਡੇ ਮੇਲੇ ਅਤੇ ਤਿਉਹਾਰ</b>
+       </a>
+       <br>
+       <br>
+       <a href="https://drive.google.com/open?id=1qc3HsGWYtX8TTb7CPPt71wEm6UIfz7qb&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fshttps://drive.google.com/open?id=1qZw_H8WkvxHEfqVJRpKWtHExQkH8rJBe&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+         <b class="j">13:-ਸ੍ਰੀ ਗੂਰੁ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ</b>
+       </a>
+       <br>
+       <br>
+       <a href="https://drive.google.com/open?id=1qXLQEP8ftZZqO3fcTXb_3ECgzpFlCp_O&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+         <b class="j">14:-ਛੱਬੀ ਜਨਵਰੀ</b>
+       </a>
+       <br>
+       <br>
+       <a href="https://drive.google.com/open?id=1qWGTJnZmlUQgRsWbzSKVyqXI0jqPA-wg&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+         <b class="j">15:-ਭਰੂਣ-ਹੱਤਿਆ</b>
+       </a>
+       <br>
+       <br>
+       <a href="https://drive.google.com/open?id=1qVfpYyn3E1wtQI8nssiymqnT-knod8La&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+         <b class="j">16:-ਰਾਬਿੰਦਰ ਨਾਥ ਟੈਗੋਰ</b>
+       </a>
+       <br>
+       <br>
+       <br>
+      <a href="#">
+        <b>ਬਿਨੈ-ਪੱਤਰ</b>
+      </a>
+        <br>
+        <br>
+        <a href="https://drive.google.com/open?id=1oYHbit2N8LQvx5Up0-0YN6gJ0_lWDXff&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+          <b class="j">1:-ਵਿਆਹ ਵਿੱਚ ਨਾ ਸ਼ਾਮਲ ਹੋਣ ਸੰਬੰਧੀ ਪੱਤਰ</b>
+        </a>
+      <br>
+      <br>
+        <a href="https://drive.google.com/open?id=1oXVUvKEj-rjB88zFA53cstLzyO1MxSoD&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+          <b class="j">2:-ਪੜ੍ਹਾਈ ਤੇ ਖੇਡਾਂ ਵਿੱਚ ਬਰਾਬਰ ਦਿਲਚਸਪੀ ਲੈਣ ਲਈ ਪੱਤਰ </b>
+        </a>
+        <br>
+        <br>
+          <a href="https://drive.google.com/open?id=1okhngTCrUBijF-KgTCdWO-2t0MNxDF7j&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+            <b class="j">3:-ਰਿਸ਼ਤੇਦਾਰ ਨੂੰ ਸੁਗਾਤ ਬਾਰੇ ਰੁਚੀ ਅਨੁਸਾਰ ਸੁਝਾਅ ਲਈ ਪੱਤਰ </b>
+          </a>
+          <br>
+          <br>
+            <a href="https://drive.google.com/open?id=1qvXUgkAcqiV4SrrVqju-xkq9LiZyZkE-&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+              <b class="j">4:-ਸਰਪੰਚ ਜਾਂ ਨਗਰਪਾਲਿਕਾ ਦੇ ਪ੍ਰਧਾਨ ਨੂੰ ਗਲ਼ੀਆਂ-ਨਾਲ਼ੀਆਂ ਦੀ ਸਫ਼ਾਈ ਜਾਂ ਮੁਰੰਮਤ ਲਈ ਬਿਨੈ-ਪੱਤਰ </b>
+            </a>
+            <br>
+            <br>
+              <a href="https://drive.google.com/open?id=1qtRWyFyXDcZ6ribHvgEWZOtCMcP8Kkc-&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+                <b class="j">5:-ਵੱਖ-ਵੱਖ ਵਸਤਾਂ  ਵਿੱਚ ਮਿਲਾਵਟ ਬਾਰੇ ਸੰਪਾਦਕ ਨੂੰ ਪੱਤਰ </b>
+              </a>
+              <br>
+              <br>
+                <a href="https://drive.google.com/open?id=1qtErL8gk4CiyzAQsS5MZpkTA_Uo1dvC5&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+                  <b class="j">6:-ਸਾਈਕਲ ਜਾਂ ਸਕੂਟਰ ਜਾਂ ਮੋਟਰ-ਸਾਈਕਲ ਚੋਰੀ ਹੋਣ ਸੰਬੰਧੀ ਥਾਣਾ ਮੁਖੀ ਨੂੰ ਪੱਤਰ </b>
+                </a>
+                <br>
+                <br>
+                <a href="https://drive.google.com/open?id=1rqIssifPdiJDSUcG-LpU5YGfqeEQ_vy6&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+                  <b class="j">7:-ਸਕੂਲ ਦੀ ਲਾਇਬ੍ਰੇਰੀ ਨੂੰ ਸੁਚਾਰੂ ਢੰਗ ਨਾਲ਼ ਚਲਾਉਣ ਸੰਬੰਧੀ ਸਕੂਲ ਮੁਖੀ ਨੂੰ ਪੱਤਰ </b>
+                </a>
+                <br>
+                <br>
+                <a href="https://drive.google.com/open?id=1rq9hwyd09fOV8AsAHj-Eaxzxf01l7NDR&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+                  <b class="j">8:-ਪੰਜਾਬ ਰੋਡਵੇਜ਼ ਜਾਂ ਪੀ.ਆਰ.ਟੀ.ਸੀ. ਦੇ ਮੈਨੇਜਰ ਨੂੰ ਬੱਸ-ਸੇਵਾ ਨਿਯਮਿਤ ਕਰਵਾਉਣ ਲਈ ਪੱਤਰ </b>
+                </a>
+                <br>
+                <br>
+                <a href="https://drive.google.com/open?id=1rmy3gRJVzGVsdkrpGK5bI8myiKBdptDm&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+                  <b class="j">9:-ਵਿੱਦਿਅਕ ਟੂਰ ਦਾ ਹਾਲ ਪੱਤਰ ਰਾਹੀਂ ਆਪਣੇ ਕਿਸੇ ਰਿਸ਼ਤੇਦਾਰ ਨਾਲ਼ ਸਾਂਝਾ ਕਰੋ </b>
+                </a>
+                <br>
+                <br>
+                <a href="https://drive.google.com/open?id=1rgleCT1WFbCqrUm0QaeP1AJb0PDhueIt&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+                  <b class="j">10:-ਮਿੱਤਰ ਜਾਂ ਸਹੇਲੀ ਨੂੰ ਸਕੂਲ ਵਿੱਚ ਹੋਏ ਸਲਾਨਾ ਸਮਾਗਮ ਬਾਰੇ ਪੱਤਰ </b>
+                </a>
+                <br>
+                <br>
+                  <a href="https://drive.google.com/open?id=1rfQ3WI96hB8gCOUV2BRYRuFr9JHz93-U&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+                    <b class="j">11:-ਅਧਿਆਪਕ ਜਾਂ ਰਿਸ਼ਤੇਦਾਰ ਤੋਂ ਦਸਵੀਂ ਉਪਰੰਤ ਅਗਲੇਰੀ ਪੜ੍ਹਾਈ ਸੰਬੰਧੀ ਸਲਾਹ ਲਈ ਪੱਤਰ </b>
+                  </a>
+                  <br>
+                  <br>
+       
+      <a href="#">
+        <b>ਪੈਰਾ ਰਚਨਾ</b>
+      </a>
+        <br>
+        <br>
+        <a href="https://drive.google.com/open?id=1pYTxtZEnhT8PMlufzFfB4KE4FAUWZhtf&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+          <b class="j">1:-ਮਿਲਵਰਤਣ</b>
+        </a>
+      <br>
+      <br>
+        <a href="https://drive.google.com/open?id=1rLcf2M0OdE7AWoD85-UDdxY9Hejif9OT&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+          <b class="j">2:-ਸਕੂਲ ਵਿੱਚ ਸਫ਼ਾਈ</b>
+        </a>
+        <br>
+        <br>
+          <a href="https://drive.google.com/open?id=1rL8clNt_YhgC_jvG0mRV9RNk9Zxe_7QP&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+            <b class="j">3:-ਸਿੱਖਿਆ ਸਾਧਨ ਵਜੋਂ ਕੰਪਿਉਟਰ</b>
+          </a>
+          <br>
+          <br>
+            <a href="https://drive.google.com/open?id=1Id4qVLhe17Q4anJlvuw2BdAxnWk5DrKx&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+              <b class="j">4:-ਸਾਝ ਕਰੀਜੈ ਗੁਣਹ ਕੇਰੀ  </b>
+            </a>
+            <br>
+            <br>
+              <a href="https://drive.google.com/open?id=1IhQw029nVl0Bfv1Vvzgtu8NAxKRV5nKu&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+                <b class="j">5:-ਸੰਤੁਲਿਤ ਖੁਰਾਕ </b>
+              </a>
+              <br>
+              <br>
+                <a href="https://drive.google.com/open?id=1Il_nEu4iSA_u91qv2FPLVjPwcCaogOXh&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+                  <b class="j">6:-ਬੱਸ ਅੱਡੇ ਦਾ ਦ੍ਰਿਸ਼ </b>
+                </a>
+                <br>
+                  <br>
+                  <br>
+                  <a href="#">
+                    <b>ਵਿਆਕਰਨ</b>
+                  </a>
+                  <br>
+                  <br>
+                  <a href="https://drive.google.com/open?id=1qL7LbnBXpuNloDeN6NTBK6TN4iJQezn8&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+                    <b class="j">1:-ਮੁਹਾਵਰੇ  </b>
+                  </a>
+                  <br>
+                  <br>
+                  <a href="https://drive.google.com/open?id=1paabvB-LOgWiz_PMw9A3-nskorH0DTQZ&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+                    <b class="j">2:-ਪੰਜਾਬੀ ਸ਼ਬਦ-ਜੋੜ </b>
+                  </a>
+                  <br>
+                  <br>
+                  <a href="https://drive.google.com/open?id=1pYl80K-zWrqm8XGClRtf3e7fQCrlWMyr&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+                    <b class="j">3:-ਵਿਆਕਰਨ - ਪਰਿਭਾਸ਼ਾ, ਮੰਤਵ ਅਤੇ ਅੰਗ  </b>
+                  </a>
+                  <br>
+                  <br>
+                  <a href="https://drive.google.com/open?id=1r_v4J5qfiEp-gvON1I6mMV9JjvfRFsvd&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+                    <b class="j">4:-ਸ਼ਬਦ-ਰਚਨਾ </b>
+                  </a>
+                  <br>
+                  <br>
+                  <a href="https://drive.google.com/open?id=1rYRSYW0vn85og1zj8-wjjFh71nCuij_g&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+                    <b class="j">5:-ਅਖਾਉਤਾਂ - 1 ਤੋਂ 25  </b>
+                  </a>
+                  <br>
+                  <br>
+                  <a href="https://drive.google.com/open?id=1Itns_akCosIVfWQiRVvM9aJisujRu1zE&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+                    <b class="j">6:-ਅਖਾਉਤਾਂ - 26 ਤੋਂ 51 </b>
+                  </a>
+                  <br>
+                  <br>
+    </details>
+  </div>
+    <br>
+  <div class="container">
+  <details><summary>
+  <b>  Online Quiz </b>
+  </summary>
+  <br>
+  <br>
+  <a href="9pbt.html">
+    <b>Start Quiz</b>
+  </a>
+  </details>
+</div>
+<footer>
+
+  <div class="footertopp">
+
+    <!-- other apps or sites -->
+    <div class="othersites">
+      <h1>Other Platform's</h1>
+      <br>
+      <div class="sites">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/share/rVnZCTwsAHi94ks1/?mibextid=qi2Omg"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://wa.me//+919878610601"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+  <!-- other links -->
+  <div class="footer-top">
+    <div class="footer-q">
+     <a href="about.html"> <h1>About</h1></a>
+     <br>
+    <a href="home.html">  <h1>home</h1></a>
+    <br>
+    <a href="student.html">  <h1>Learning Corner</h1></a><br>
+       <a href="https://wa.me//+919878610601"> <h1>Contact</h1></a>
+       <br>
+  <a href="admission.html">    <h1>Admition</h1></a>
+  <br>
+    </div>
+    <div class="footer-w">
+   <a href="ebooks.html">   <h1>E-book</h1></a>
+   <br>
+   <a href="online.html">   <h1>Quiz</h1></a>
+   <br>
+<a href="https://www.abcya.com/">      <h1>Games</h1></a>
+<br>
+   <a href="https://www.punjabeducare.org/pseb-syllabus">   <h1>Syllabus</h1></a>
+   <br>
+  <a href="result.html">    <h1>result</h1></a>
+    </div>
+  </div>
+    <br>
+  <div class="newu">
+    <h4>Programming Language</h4>
+    <br>
+    <div class="new">
+    <h3>Html</h3>
+    <h3>Css</h3>
+    <h3>Javascript</h3>
+    </div>
+  </div>
+  
+  <!-- site privacy and non copy content proffs -->
+  <div class="footer1">
+    <div class="footerqw"><a href="license.html">License</a> 
+    <a href="privacy.html">Privacy</a>
+    <a href="https:\\wa.me\\+918264751918">Contact with Web Designer</a>
+    <a href="tercon.html">Terms and condition</a>
+    </div>
+  </div>
+  &copy;Govt high school khunde halal.All rights reserved
+</footer>
+</body>
+
+</html>

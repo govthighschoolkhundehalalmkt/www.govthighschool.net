@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Staff</title>
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        
+/**top content **/
+.navbar{
+    padding:10px ;
+    justify-content:space-evenly;
+    height:40px;
+    display:flex;
+    background-color:rgb(25,25,25);
+    color:white;
+    font-size:0.57rem;
+    align-items:center;
+}
+
+
+/** top location **/
+.navbar-location{
+    display:flex;
+    justify-content:center;
+    justify-items:center;
+    text-align:center;
+}
+
+
+/** top location border **/
+.navbar-location h1{
+    padding: 10px;
+    border:2px solid transparent;
+}
+
+/** top location border **/
+.navbar-location h1:hover{
+    border-radius:15px;
+    border:2px solid white;
+}
+
+
+/** make search and symbol **/
+.navbar-search{
+    align-items:center;
+    display:flex;
+    justify-content: space-evenly;
+    justify-content:center;
+    justify-items:center;
+}
+
+
+/** search **/
+.search{
+    width:auto;
+    justify-content:space-evenly;
+    display:flex;
+}
+
+
+/** symbol **/
+.searchw{
+    width:50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color:rgb(255, 166, 1);
+    border-end-end-radius:15px;
+    height:45px;
+    font-size:1rem;
+    border-start-end-radius:15px;
+}
+
+
+/** search  **/
+.navbar-search input[type=search]{
+    outline:none;
+    font-size:1rem;
+    padding:10px 10px;
+    border:none;
+    height:45px;
+    width:100%;
+    border-start-start-radius:15px;
+    border-end-start-radius:15px;
+}
+
+
+/**mange height in all screen and sizes **/ 
+@media (max-width:300px){
+    .search{
+        width:100px;
+    }
+}
+
+
+/**mange height in all screen and sizes **/ 
+@media (min-width:400px){
+    .search{
+        width:190px;
+    }
+}
+
+
+/**mange height in all screen and sizes **/ 
+@media (min-width:500px){
+    .search{
+        width:250px;
+    }
+}
+
+
+/**mange height in all screen and sizes **/ 
+@media (min-width:600px){
+    .search{
+        width:350px;
+    }
+}
+
+
+/**mange height in all screen and sizes **/ 
+@media (min-width:700px){
+    .search{
+        width:400px;
+    }
+}
+
+
+/**mange height in all screen and sizes **/ 
+@media (min-width:800px){
+    .search{
+        width:500px;
+    }
+}
+
+
+/**mange height in all screen and sizes **/ 
+@media (min-width:900px){
+    .search{
+        width:650px;
+    }
+}
+
+
+/**mange height in all screen and sizes **/ 
+@media (min-width:1000px){
+    .search{
+        width:850px;
+    }
+}
+
+
+/** option bar **/
+.optionbar{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    justify-content:space-evenly;
+    padding:10px ;
+    color:white;
+    font-size:1rem;
+    background-color:rgb(99, 141, 128);
+}
+
+
+/** optionbar a midificatio **/
+.optionbar a{
+    color:white;
+    text-decoration:none;
+    font-family: Arial;
+}
+
+
+/**mange height in all screen and sizes **/ 
+@media (max-width:300px){
+    .optionbar{
+        font-size:0.6rem;
+    }
+}
+
+
+/**marque setting**/
+marquee{
+    padding: 10px;
+    background-color:black;
+    color:white;
+}
+      body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.header-title {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2.5em;
+    color: #003366;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.staff-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.staff-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: slideUp 1s ease-in-out;
+}
+.staff-card:hover{
+    background-color: black;
+    color: white;
+}
+
+.staff-card:hover {
+    transform: scale(1.05);
+    color: white;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.staff-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.staff-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #003366;
+}
+
+.staff-role {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+#hide{
+    visibility: hidden;
+}
+    </style>
+</head>
+<body>
+
+  
+<!-- header -->
+<Header id="hr">
+    <!-- location -->
+  <div class="navbar">
+      <div class="navbar-location">
+          <h1>  <i class="fa-solid fa-location-dot"></i> India</h1>
+      </div>
+      <!-- search and icon -->
+          <div class="navbar-search">
+              <div class="search">
+              <input type="search" placeholder="Click here to Search......."  id="search-input">
+          </div>
+          <div class="searchw"  id="search-button">
+              🔍
+          </div>
+          </div>
+  </div>
+  <!-- option -->
+  <div class="optionbar">
+      <a href="home.html">Home</a>
+      <a href="https://wa.me//+919878610601">Contact</a>
+      <a href="admission.html">Admition</a>
+      <a href="ebooks.html">E-books</a>
+      <a href="online.html">Quiz</a>
+  </div>
+  <!-- marquee -->
+  <div class="marque" id="how">
+      <marquee behavior="" direction="left"><pre><b> 👔  ਵਧੀਆ ਕੁਆਲਿਟੀ ਦੀ ਵਰਦੀ    📚   ਵਧੀਆ ਪੜ੍ਹਾਈ   👨‍🏫   15 ਤੋਂ ਵੀ ਜ਼ਿਆਦਾ ਮਾਹਿਰ ਅਧਿਆਪਕ     🎥  ਪ੍ਰੋਜੈਕਟ ਰਾਹੀਂ ਡਿਜਿਟਲ ਪੜ੍ਹਾਈ    🍝  ਵਧੀਆ ਕੁਆਲਿਟੀ ਦਾ ਖਾਣਾ    </b> </pre>  </marquee>
+  </div>
+  </Header>
+  <header class="hero-section">
+  <div class="hero-content">
+    <h2 class="fadeInText">Meet Our Staff</h2>
+    <p class="fadeInText" id="hide">(Class - 10th)</p>
+    <button class="cta-button">Learn More</button>
+  </div>
+  </header>
+    <main>
+        <section class="staff-container">
+            <div class="staff-card">
+                <img src="teacher1.jpg"  class="staff-img">
+                <h3 class="staff-name">Pawan Kumar</h3>
+                <p class="staff-role">Principal Teacher</p>
+            </div>
+            <!-- Teacher 1 -->
+            <div class="staff-card">
+                <img src="teacher1.jpg"  class="staff-img">
+                <h3 class="staff-name">Gurmeet Singh</h3>
+                <p class="staff-role">English Teacher</p>
+            </div>
+              <!-- Teacher 1 -->
+              <div class="staff-card">
+                <img src="teacher1.jpg"  class="staff-img">
+                <h3 class="staff-name">Raman Singh</h3>
+                <p class="staff-role">English Teacher</p>
+              </div>
+            <!-- Teacher 2 -->
+            <div class="staff-card">
+                <img src="teacher2.jpg"  class="staff-img">
+                <h3 class="staff-name">Hardeep singh</h3>
+                <p class="staff-role">Physical education Teacher</p>
+            </div>
+            <!-- Teacher 3 -->
+            <div class="staff-card">
+                <img src="teacher3.jpg"  class="staff-img">
+                <h3 class="staff-name">Amandeep Singh</h3>
+                <p class="staff-role">Social Science   Teacher</p>
+            </div>
+              <div class="staff-card">
+                <img src="teacher3.jpg"  class="staff-img">
+                <h3 class="staff-name">Kuljeet Kaur</h3>
+                <p class="staff-role">Social Science Teacher</p>
+              </div>
+            <!-- Add remaining teacher cards -->
+            <!-- Repeat similar blocks for Teacher 4 to Teacher 15 -->
+            <div class="staff-card">
+                <img src="teacher4.jpg"  class="staff-img">
+                <h3 class="staff-name">Gagan Kaur</h3>
+                <p class="staff-role">Science Teacher</p>
+            </div>
+              <div class="staff-card">
+                <img src="teacher3.jpg"  class="staff-img">
+                <h3 class="staff-name">Gurpair Singh</h3>
+                <p class="staff-role">Computer Science   Teacher</p>
+            </div>
+              <!-- Teacher 1 -->
+            <div class="staff-card">
+                <img src="teacher1.jpg"  class="staff-img">
+                <h3 class="staff-name">Baljeet Singh</h3>
+                <p class="staff-role">Punjabi  Teacher</p>
+            </div>
+              <div class="staff-card">
+                <img src="teacher1.jpg" class="staff-img">
+                <h3 class="staff-name">Harpinder Singh</h3>
+                <p class="staff-role">Punjabi Teacher</p>
+              </div>
+            <div class="staff-card">
+                <img src="teacher5.jpg"  class="staff-img">
+                <h3 class="staff-name">Rimple Rani</h3>
+                <p class="staff-role">Hindi Teacher</p>
+            </div>
+              <div class="staff-card">
+                <img src="teacher1.jpg"  class="staff-img">
+                <h3 class="staff-name">Mukesh Goyal</h3>
+                <p class="staff-role">Math  Teacher</p>
+            </div>
+            <!-- Add similar divs for all 15 teachers -->
+        </section>
+    </main>
+    <footer>
+
+        <div class="footertopp">
+      
+          <!-- other apps or sites -->
+          <div class="othersites">
+            <h1>Other Platform's</h1>
+            <br>
+            <div class="sites">
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.facebook.com/share/rVnZCTwsAHi94ks1/?mibextid=qi2Omg"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              <a href="https://wa.me//+919878610601"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- other links -->
+        <div class="footer-top">
+          <div class="footer-q">
+           <a href="about.html"> <h1>About</h1></a>
+           <br>
+          <a href="home.html">  <h1>home</h1></a>
+          <br>
+          <a href="student.html">  <h1>Learning Corner</h1></a><br>
+             <a href="https://wa.me//+919878610601"> <h1>Contact</h1></a>
+             <br>
+        <a href="admission.html">    <h1>Admition</h1></a>
+        <br>
+          </div>
+          <div class="footer-w">
+         <a href="ebooks.html">   <h1>E-book</h1></a>
+         <br>
+         <a href="online.html">   <h1>Quiz</h1></a>
+         <br>
+      <a href="https://www.abcya.com/">      <h1>Games</h1></a>
+      <br>
+         <a href="https://www.punjabeducare.org/pseb-syllabus">   <h1>Syllabus</h1></a>
+         <br>
+        <a href="result.html">    <h1>result</h1></a>
+          </div>
+        </div>
+          <br>
+        <div class="newu">
+          <h4>Programming Language</h4>
+          <br>
+          <div class="new">
+          <h3>Html</h3>
+          <h3>Css</h3>
+          <h3>Javascript</h3>
+          </div>
+        </div> 
+        <!-- site privacy and non copy content proffs -->
+        <div class="footer1">
+          <div class="footerqw"><a href="license.html">License</a> 
+          <a href="privacy.html">Privacy</a>
+          <a href="https:\\wa.me\\+918264751918">Contact with Web Designer</a>
+          <a href="tercon.html">Terms and condition</a>
+          </div>
+        </div>
+        &copy;Govt high school khunde halal.All rights reserved
+      </footer>
+</body>
+</html>

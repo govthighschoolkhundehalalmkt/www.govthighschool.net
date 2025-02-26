@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="admission.css">
+  <title></title>
+</head>
+<body>
+    </div>
+<div class="top">
+  <center>
+  <h2>Admission Form</h2>
+  </center>
+</div>
+<form name="google-sheet" method="post">
+      <label for="Name"><b>Enter your name:</b></label>
+      <center>
+      <input type="text" Placeholder="Name.........." required name="uname"></center>
+      <br>
+      <br>
+      <label for="Namef"><b>Enter your father name:</b></label>
+      <center>
+      <input type="text" Placeholder="Father Name.........." required name="father name"></center>
+      <br>
+      <br>
+      <label for="mName"><b>Enter your mother name:</b></label>
+      <center>
+      <input type="text" Placeholder="Mother Name.........." required name="mname"></center>
+      <br>
+      <br>
+       <label for="Roll no."><b>Enter your previous roll no:</b></label><center>
+        <input type="Text" Placeholder="Roll No.........." maxlength="30words" required name="Password"></center>
+        <br>
+        <br>
+        <label for="Class"><b>Select your previous class:</b></label>
+        <center>
+          <select name="class" required >
+            <option value=""></option>
+      <option value="6th(a)">6th(a)</option>
+      <option value="6th(b)">6th(b)</option>
+      <option value="7th(a)">7th(a)</option>
+      <option value="7th(b)">7th(b)</option>
+      <option value="8th(a)">8th(a)</option>
+      <option value="8th(b)">8th(b)</option>
+      <option value="9th(a)">9th(a)</option>
+      <option value="9th(b)">9th(b)</option>
+      <option value="10(a)">10th(a)</option>
+      <option value="10(b)">10th(b)</option>
+      <option value="Other">Other</option>
+    </select>
+        </center>
+        <br>
+        <br>
+        <label for="Class"><b>Select class for admition:</b></label>
+        <center>
+          <select name="previous class" required >
+            <option value=""></option>
+      <option value="6th(a)">6th(a)</option>
+      <option value="6th(b)">6th(b)</option>
+      <option value="7th(a)">7th(a)</option>
+      <option value="7th(b)">7th(b)</option>
+      <option value="8th(a)">8th(a)</option>
+      <option value="8th(b)">8th(b)</option>
+      <option value="9th(a)">9th(a)</option>
+      <option value="9th(b)">9th(b)</option>
+      <option value="10(a)">10th(a)</option>
+      <option value="10(b)">10th(b)</option>
+      <option value="Other">Other</option>
+    </select>
+        </center>
+        <br>
+        <br>
+        <label for="Village"><b>Enter you village name:</b></label>
+        <center>
+          <input type="text" minlength="2" name="village" required placeholder="village...........">
+        </center>
+        <br>
+        <br><label for="Aadhar Card No."><b>Enter your Aadhar Card no:</b></label>
+        <center>
+          <input type="text" minlength="2" name="Aadhar" required placeholder="Aadhar Card No..........">
+        </center>
+        <br>
+        <br>
+        <label for="Argument"><b>All the above information is correct.</b></label>
+          <input type="checkbox" name="statement" required value="All is correct">
+        <br>
+        <br>
+        <center>
+        <button type="reset" class="bty">Reset</button>
+        <button type="submit" class="bty">Register </button>
+        </center>
+    </form>
+    <br>
+    <br>
+  </div>
+</div>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwuvZawWBC4MtMmyoaWyf00bDogI4npp_95LXPb4su_G17EJek3tU9BvU12Zw-D3Mw6/exec'
+
+    const form = document.forms['google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => alert("Thanks for Contacting us..! Your admission is successfully complete...")
+        )
+        .catch(error => console.error('Error!', error.message))
+          window.location.href = "home.html";
+    })
+  </script>
+</body>
+</html>

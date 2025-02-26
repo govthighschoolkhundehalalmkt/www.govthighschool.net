@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="form.css">
+  <style>
+    .container {
+            margin-right:0px ;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .container h2{
+          color:#0034FF;
+          text-align:center;;
+        }
+        button {
+
+  background-color: #04AA6D;
+
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+}
+
+button:hover {
+  opacity: 0.8;
+  }
+input[type=text], input[type=number],input[type=password], input[type=email]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.radi input{
+  vertical-align:middle;
+}
+  </style>
+</head>
+<body>
+<div class="container">
+  <h2>Computer Science Practice Test</h2>
+</div>
+<br>
+<div class="container">
+  <form method="post" name="google-sheet" id="quizForm">
+    <br>
+    <label for="Name"><b>Enter Your Name: </b></label>
+    <input type="text" placeholder="Name....." name="Name" required><br> <br>
+    <label for="E-Punjab ID"><b>Enter Your E-Punjab ID:</b></label>
+    <input type="number" placeholder="E-Punjab ID....." name="ID"  required><br> <br>
+    <label for="Class"><b>Enter your Class Name:</b></label>
+    <input type="text"  placeholder="Class Name....." name="Class Name"  required>
+    <br> <br>
+    <label for="Village"><b>Enter your Village Name:</b></label>
+    <input type="text" placeholder="Village Name....." name="Village Name" required>
+    <br> <br>
+  
+  <br>
+  
+    <label for=""><b>1.   ਹੇਠ ਲਿਖਿਆਂ ਵਿਚੋਂ ਕਿਹੜਾ ਫੋਨੇਟਿੱਕ ਫੌਂਟ ਪੰਜਾਬੀ ਵਿਚ ਟਾਈਪਿੰਗ ਲਈ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ। </b></label> <br> <br> <div class="radi">
+    <input type="radio" name="1"  id="q1" value="q" id="q1"><b> ਅਨਮੋਲ ਲਿੱਪੀ<br> <br>
+    <input type="radio" name="1" id="q1" value="sapphires"> ਰਾਵੀ<br> <br>
+    <input type="radio" name="1" id="q1" value="gold"> ਅਸੀਸ<br> <br>
+    <input type="radio" name="1" id="q1" value="ruby"> ਉਪਰੋਕਤ ਸਾਰੇ</b> <br> </div>
+  
+  <br>
+  
+  <label for="2."><b>2. ਟਾਈਪਿੰਗ ਕਰਨ ਲਈ ਕੀਅਬੋਰਡ ਨੂੰ ਦੇ ਹਿੱਸਿਆਂ ਵਿੱਚ ਵੰਡਿਆ ਜਾਂਦਾ ਹੈ - ਇੱਕ ਖੱਬੇ ਹੱਥ ਲਈ ਅਤੇ ਇੱਕ ਸੱਜੇ ਹੱਥ ਲਈ।</b></label> <br> <br> <div class="radi">
+    <input type="radio"  id="q2" name="q2" value="w"><b> ਸਹੀ<br> <br>
+    <input type="radio"  id="q2" name="q2" value="False"> ਗ਼ਲਤ<br> <br> </div>
+  <br>
+  <label for="3."><b>3. _____________ ਇੱਕ ਡਿਵਾਈਸ ਹੈ ਜੋ ਕੰਪਿਊਟਰ ਨੂੰ ਟੈਲੀਫੋਨ ਲਾਈਨ ਨਾਲ ਜੋੜਦਾ ਹੈ।</b></label> <br> <br> <div class="radi">
+    <input type="radio" name="q3" id="q3" value="e"><b> ਮਾਡਮ<br> <br>
+    <input type="radio" name="q3" id="q3" value="Author"> ਮਾਊਸ<br> <br>
+    <input type="radio" name="q3" id="q3" value="professor"> ਟੈਲੀਫੋਨ ਤਾਰ<br> <br>
+    <input type="radio" name="q3" id="q3" value="4"> ਮੋਬਾਈਲ</b> <br> </div>
+
+  <br>
+
+  <label for="4."><b>4. ਮੇਲ ਭੇਜਣ ਦਾ ਸਭ ਤੋਂ ਤੇਜ਼ ਤਰੀਕਾ ______________
+ਹੁੰਦਾ ਹੈ।</b></label> <br> <br> <div class="radi">
+    <input type="radio" name="q4" id="q4" value="S+V1 (s,es)"><b> ਟੈਲੀਗ੍ਰਾਮ<br> <br>
+    <input type="radio" name="q4" id="q4" value="S+V1"> ISP<br> <br>
+    <input type="radio" name="q4" id="q4" value="3">  ਚਿੱਠੀਆਂ<br> <br>
+    <input type="radio" name="q4" id="q4" value="r"> ਈ-ਮੇਲ</b> <br> </div>
+
+  <br>
+  
+  <label for="5."><b>5. WWW ਦਾ ਮਤਲਬ ਹੈ ____________</b></label> <br> <br> <div class="radi">
+    <input type="radio" name="q5" id="q5" value="t"><b> ਵਰਲਡ ਵਾਈਡ ਵੈਬ<br> <br>
+    <input type="radio" name="q5" id="q5" value="have known" ><b> ਵਾਈਡ ਵਰਲਡ ਵੈਬ</b> <br> <br>
+    <input type="radio" name="q5" id="q5" value="knows"> ਵਰਲਡ ਵੈਬ ਵਾਈਡ<br> <br>
+    <input type="radio" name="q5" id="q5" value="knew">   ਵੈਥ ਵਰਲਡ ਵਾਈਡ</b> <br>
+  </div> <br>
+  <center>
+    <input type="username" id="score" name="Score"><br>
+     <div class="b09">  <li> <button type="button" onclick="submitQuiz()">Score</button></li><li>
+    <button type="submit">Submit</button></li></div></center>
+</form>
+  <div id="result" class="80" style="margin-top: 20px;"></div>
+<script>
+  function submitQuiz() {
+    const correctAnswers = {
+      q1: 'q',
+      q2: 'w' ,
+      q3:  'e',
+      q4:  'r',
+      q5:  't'
+    };
+
+    let score = 0;
+    const form = document.getElementById('quizForm');
+    const result = document.getElementById('result');
+
+    for (let question in correctAnswers) {
+      const userAnswer = form[question].value.trim().toLowerCase();
+      if (userAnswer === correctAnswers[question]) {
+        score++;
+      }
+    }
+
+    const totalQuestions = Object.keys(correctAnswers).length;
+    const scorePercentage = (score / totalQuestions) * 100;
+    let feedback = '';
+
+    if (scorePercentage === 100) {
+      feedback = 'Very Good!';
+    } else if (scorePercentage >= 50) {
+      feedback = 'Not Good.';
+    } else {
+      feedback = 'Needs Improvement.';
+    }
+
+    result.textContent = `score: ${score}/${totalQuestions}. ${feedback}`;
+
+    document.getElementById('score').value = score;
+  }
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwjn6SUX9hTvoPQ0G7c6GALYRQwn28ahFdxlQU38Hy65B_ff-VW5jjfMeJolVDqNODR/exec'
+  const form = document.forms['google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+      .catch(error => console.error('Error!', 
+      error.message))
+  })
+</script>
+</body>
+
+</html>

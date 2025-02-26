@@ -1,0 +1,297 @@
+  /**footer**/
+  footer{
+    color:white;
+    padding: 10px;
+    text-align:center;
+    background:black;
+    font-size:1rem;
+  }
+  
+  
+  footer a{
+    text-decoration:none;
+    color:white;
+  }
+
+
+  .footerqw{
+    display:flex;
+    justify-content:space-evenly;
+    padding: 20px;
+    font-size:1rem;
+    color:white;
+    
+  }
+
+
+  .footerqw a{
+    font-size:1rem;
+    padding-right:10px;
+    color:white;
+    text-decoration:none;
+  }
+
+
+  .footer-q{
+    font-size:0.5rem;
+    display:flex;
+    flex-direction:column;
+  }
+
+
+  .footer-q h1{
+    margin-top:10px;
+  }
+
+
+  .footer-q h1{
+    margin-top:10px;
+  }
+
+
+  .footertop{
+    display:flex;
+  }
+
+
+  .footer-w{
+    font-size:0.5rem;
+    display:flex;
+    flex-direction:column;
+  }
+
+
+  .footer-w h1{
+    margin-top:10px;
+  }
+
+
+  .footer-w h1{
+    margin-top:10px;
+  }
+
+
+  .footer-top{
+    display:flex;
+    justify-content:space-evenly;
+  }
+
+
+  /**other sites**/
+  .othersites{
+    padding: 10px;
+    text-align:center;
+  }
+  
+  
+  .othersites h1{
+    font-size:1.5rem;
+  }
+  
+  
+.sites{
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+}  
+
+
+.sites a{
+  text-decoration:none;
+  color:white;
+  font-size:2.5rem;
+}
+  
+  
+  .sites img {
+    height:40px;
+    border-radius:35px;
+    width:40px;
+  }
+  
+
+
+
+  
+.fadeInText {
+  animation: fadeIn 2s ease-in-out;
+}
+
+.cta-button {
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.hero-content {
+  margin-top: 50px;
+  animation: slideIn 3s ease-in-out;
+}
+header.hero-section {
+  background: linear-gradient(120deg, #3498db, #ff006a, #36044b);
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  animation: heroAnimation 3s ease-in-out infinite alternate;
+}
+@keyframes heroAnimation {
+  0% {
+    background: linear-gradient(120deg, #36044b, #3498db, #ad4444);
+  }
+  50% {
+    background: linear-gradient(120deg, #b32e91, #a01616, #f39c12);
+  }
+  100% {
+    background: linear-gradient(120deg, #f39c12, #4622e6, #000000, #3498db, #ff006a);
+  }
+}
+@keyframes slideIn {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.cta-button {
+  visibility:hidden;
+  background: #f39c12;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+ #hr{
+  height: 137px;
+  } 
+
+
+   /**footer**/
+   footer{
+    color:white;
+    padding: 10px;
+    text-align:center;
+    background:black;
+    font-size:1rem;
+  }
+  
+  
+  footer a{
+    text-decoration:none;
+    color:white;
+  }
+
+
+  .footerqw{
+    display:flex;
+    justify-content:space-evenly;
+    padding: 20px;
+    font-size:1rem;
+    color:white;
+    
+  }
+
+
+  .footerqw a{
+    font-size:1rem;
+    padding-right:10px;
+    color:white;
+    text-decoration:none;
+  }
+
+
+  .footer-q{
+    font-size:0.5rem;
+    display:flex;
+    flex-direction:column;
+  }
+
+
+  .footer-q h1{
+    margin-top:10px;
+  }
+
+
+  .footer-q h1{
+    margin-top:10px;
+  }
+
+
+  .footertop{
+    display:flex;
+  }
+
+
+  .footer-w{
+    font-size:0.5rem;
+    display:flex;
+    flex-direction:column;
+  }
+
+
+  .footer-w h1{
+    margin-top:10px;
+  }
+
+
+  .footer-w h1{
+    margin-top:10px;
+  }
+
+
+  .footer-top{
+    display:flex;
+    justify-content:space-evenly;
+  }
+
+
+  /**other sites**/
+  .othersites{
+    padding: 10px;
+    text-align:center;
+  }
+  
+  
+  .othersites h1{
+    font-size:1.5rem;
+  }
+  
+  
+.sites{
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+}  
+
+
+.sites a{
+  text-decoration:none;
+  color:white;
+  font-size:2.5rem;
+}
+  
+  
+  .sites img {
+    height:40px;
+    border-radius:35px;
+    width:40px;
+  }
+  
+  
+.new{
+  display: flex;
+  justify-content: space-evenly;
+}
+ #hr{
+
+  height: 130px;
+
+  } 

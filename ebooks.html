@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="all.css">
+  <style>
+  .j{
+    padding-left:14%;
+  }
+  .container0 a {
+    padding-left: 10%;
+    text-decoration: none;
+    color: black;
+  }
+  .container0 {
+    margin-right: 0px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .container {
+    margin-right: 0px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  details{
+    border-top:2px solid black ;
+    border-bottom:2px solid black ;
+  }
+/** use for body tag only **/
+
+*{
+
+    margin: 0;
+    font-family:Arial;
+    border:border-box;
+    text-decoration:none;
+}
+
+
+/**top content **/
+.navbar{
+    padding:10px ;
+    justify-content:space-evenly;
+    height:40px;
+    display:flex;
+    background-color:rgb(25,25,25);
+    color:white;
+    font-size:0.57rem;
+    align-items:center;
+}
+
+
+/** top location **/
+.navbar-location{
+    display:flex;
+    justify-content:center;
+    justify-items:center;
+    text-align:center;
+}
+
+
+/** top location border **/
+.navbar-location h1{
+    padding: 10px;
+    border:2px solid transparent;
+}
+
+/** top location border **/
+.navbar-location h1:hover{
+    border-radius:15px;
+    border:2px solid white;
+}
+
+
+/** make search and symbol **/
+.navbar-search{
+    align-items:center;
+    display:flex;
+    justify-content: space-evenly;
+    justify-content:center;
+    justify-items:center;
+}
+
+
+/** search **/
+.search{
+    width:auto;
+    justify-content:space-evenly;
+    display:flex;
+}
+
+
+/** symbol **/
+.searchw{
+    width:50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color:rgb(255, 166, 1);
+    border-end-end-radius:15px;
+    height:45px;
+    font-size:1rem;
+    border-start-end-radius:15px;
+}
+
+
+/** search  **/
+.navbar-search input[type=search]{
+    outline:none;
+    font-size:1rem;
+    padding:10px 10px;
+    border:none;
+    height:45px;
+    width:100%;
+    border-start-start-radius:15px;
+    border-end-start-radius:15px;
+}
+
+
+/**mange height in all screen and sizes **/ 
+@media (max-width:300px){
+    .search{
+        width:100px;
+    }
+}
+
+
+/**mange height in all screen and sizes **/ 
+@media (min-width:400px){
+    .search{
+        width:190px;
+    }
+}
+
+
+/**mange height in all screen and sizes **/ 
+@media (min-width:500px){
+    .search{
+        width:250px;
+    }
+}
+
+
+/**mange height in all screen and sizes **/ 
+@media (min-width:600px){
+    .search{
+        width:350px;
+    }
+}
+
+
+/**mange height in all screen and sizes **/ 
+@media (min-width:700px){
+    .search{
+        width:400px;
+    }
+}
+
+
+/**mange height in all screen and sizes **/ 
+@media (min-width:800px){
+    .search{
+        width:500px;
+    }
+}
+
+
+/**mange height in all screen and sizes **/ 
+@media (min-width:900px){
+    .search{
+        width:650px;
+    }
+}
+
+
+/**mange height in all screen and sizes **/ 
+@media (min-width:1000px){
+    .search{
+        width:850px;
+    }
+}
+
+
+/** option bar **/
+.optionbar{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    justify-content:space-evenly;
+    padding:10px ;
+    color:white;
+    font-size:1rem;
+    background-color:rgb(99, 141, 128);
+}
+
+
+/** optionbar a midificatio **/
+.optionbar a{
+    color:white;
+    text-decoration:none;
+    font-family: Arial;
+}
+
+
+/**mange height in all screen and sizes **/ 
+@media (max-width:300px){
+    .optionbar{
+        font-size:0.6rem;
+    }
+}
+
+
+/**marque setting**/
+marquee{
+    padding: 10px;
+    background-color:black;
+    color:white;
+}
+
+
+
+.mg{
+  text-align:center;
+}
+details{
+  padding-top:20px;
+  padding-bottom:20px;
+}
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+.container a{
+  padding-left:10%;
+  text-decoration:none;
+  color:black;
+}
+
+  </style>
+  <title></title>
+</head>
+<body>
+<!-- header -->
+<Header id="hr">
+  <!-- location -->
+<div class="navbar">
+    <div class="navbar-location">
+        <h1>  <i class="fa-solid fa-location-dot"></i> India</h1>
+    </div>
+    <!-- search and icon -->
+        <div class="navbar-search">
+            <div class="search">
+            <input type="search" placeholder="Click here to Search......."  id="search-input">
+        </div>
+        <div class="searchw"  id="search-button">
+            🔍
+        </div>
+        </div>
+</div>
+<!-- option -->
+<div class="optionbar">
+    <a href="home.html">Home</a>
+    <a href="https://wa.me//+919878610601">Contact</a>
+    <a href="admission.html">Admition</a>
+    <a href="ebooks.html">E-books</a>
+    <a href="online.html">Quiz</a>
+</div>
+<!-- marquee -->
+<div class="marque" id="how">
+    <marquee behavior="" direction="left"><pre><b> 👔  ਵਧੀਆ ਕੁਆਲਿਟੀ ਦੀ ਵਰਦੀ    📚   ਵਧੀਆ ਪੜ੍ਹਾਈ   👨‍🏫   15 ਤੋਂ ਵੀ ਜ਼ਿਆਦਾ ਮਾਹਿਰ ਅਧਿਆਪਕ     🎥  ਪ੍ਰੋਜੈਕਟ ਰਾਹੀਂ ਡਿਜਿਟਲ ਪੜ੍ਹਾਈ    🍝  ਵਧੀਆ ਕੁਆਲਿਟੀ ਦਾ ਖਾਣਾ    </b> </pre>  </marquee>
+</div>
+</Header>
+<header class="hero-section">
+<div class="hero-content">
+  <h2 class="fadeInText">E-books</h2>
+  <p class="fadeInText" ></p>
+  <button class="cta-button">Learn More</button>
+</div>
+</header>
+  <div class="container">
+    <details> <summary>
+      <b>6th Class</b>
+    </summary>
+  
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=16yNzeoY04BtJjWssAESpe9RhDdah_hTU&usp=drive_fs">
+<b>English</b> 
+    </a>
+    <br>
+    <br>
+        <a href="https://drive.google.com/drive/folders/13PLuee2lBpC3n1YP5wTYcQZ4oNthTKmO?usp=sharing">
+          <b>Science</b>
+        </a>
+        <br>
+        <br>
+            <a href="https://drive.google.com/open?id=1QtYvAfZxiJoV-yjvEI9O3_9s_X-8dvpS&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+              <b>Math</b>
+            </a>
+            <br>
+            <br>
+                <a href="https://drive.google.com/open?id=1V3N-E2xRsS81CmRZgxh3XylGe2dQ9-hv">
+                  <b>Hindi</b>
+                </a>
+                <br>
+                <br>
+                    <a href="https://drive.google.com/open?id=1esPGeXM-BRBloE-1NoC8R6T0r7tb_xCt&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+                      <b>Computer Science</b>
+                    </a>
+                    <br>
+                    <br>
+                        <a href="https://drive.google.com/open?id=1wJfOPmFQsV2X2c-ftg5nmHdE_QhLWXuu&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+                          <b>Punjab(ਪੰਜਾਬੀ ਪੁਸਤਕ)</b>
+                        </a>
+                        <br>
+                        <br>
+                            <a href="https://drive.google.com/open?id=1wL6imZ14ds-FTr26MiMYPELAQH4tU3cG&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+                              <b>Punjab(ਪੰਜਾਬੀ ਵਿਆਕਰਨ ਅਤੇ ਲੇਖ-ਰਚਨਾ)</b>
+                            </a>
+                            <br>
+                            <br>
+                            <a href="https://drive.google.com/file/d/1PGkdvxeENi-GqlH9JASROVHxlu1XD3Jp/view?usp=sharing">
+                              <b>Social Science</b>
+                            </a>
+                            <br>
+                            <br>
+    </details>
+  </div>
+  <div class="container">
+    <details> <summary>
+      <b>7th Class</b>
+    </summary>
+    <br>
+    <br>
+    <a href="https://drive.google.com/file/d/1daihV0_uYgG91-K6CM5v2XOVaiLK5vzW/view?usp=sharing">
+      <b>English</b>
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/drive/folders/11x0QKCscA6zMuu7R0uXf4VaHd0_EIOWG?usp=sharing">
+      <b>Science</b>
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=1QiizL1XzBs5cD94r89tXqouQ1gJoIrHF&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+      <b>Math</b>
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=1VMsWhqQIFJX7t4wWAmqXZvppvUhk8bYg">
+      <b>Hindi</b>
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=1mV91qRVDITdBp5TODu7KFWrsBPyoq2C_&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+      <b>Computer Science</b>
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=1wMT11_s3F9_N9kZorDQXtBoMrQD3tH9t&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+      <b>Punjabi(ਪੰਜਾਬੀ ਪੁਸਤਕ)</b>
+    </a>
+    <br>
+    <br>
+      <a href="https://drive.google.com/open?id=1wL6imZ14ds-FTr26MiMYPELAQH4tU3cG&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+        <b>Punjabi(ਪੰਜਾਬੀ ਵਿਆਕਰਨ ਅਤੇ ਲੇਖ-ਰਚਨਾ)</b>
+      </a>
+      <br>
+      <br>
+    <a href="https://drive.google.com/file/d/1cR7enGyCeDyeo-rKafJtlzLOcYPQjbbf/view?usp=sharing">
+      <b>Social Science</b>
+    </a>
+    <br>
+    <br>
+    </details>
+  </div>
+  <br>
+  <div class="container">
+    <details> <summary>
+      <b>8th Class</b>
+    </summary>
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=1qt-F4BvXXdz2fG7m_Ye-BL31QAYNu6JR&usp=drive_fs">
+      <b>English</b>
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=1qtN994oAGNl1MmnZzKZlxEkBsHi-6dC2&usp=drive_fs">
+      <b>Science</b>
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=1qbcmhDtT45b4D4lUBLan8QCFcB19eLGC&usp=drive_fs">
+      <b>Math</b>
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=1VQyM_01MtkoDc27WAtxgWcpy6UXPHbd8">
+      <b>Hindi</b>
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=1qglV2AJEtKRysDYzMJ5YQ0-PMvI8e7fW&usp=drive_fs">
+      <b>Computer Science</b>
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=1wTFGJG7X-NAHtmERWMNn4OvZdqY1Ukw1&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+      <b>Punjabi(ਪੰਜਾਬੀ ਪੁਸਤਕ)</b>
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/open?id=1wL6imZ14ds-FTr26MiMYPELAQH4tU3cG&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+      <b>Punjabi(ਪੰਜਾਬੀ ਵਿਆਕਰਨ ਅਤੇ ਲੇਖ-ਰਚਨਾ)</b>
+    </a>
+    <br>
+    <br>
+    <a href="https://drive.google.com/file/d/1Olj1H6lsasjb3jz1-pzqEVZne-pKziSV/view?usp=sharing">
+      <b>Social Science</b>
+    </a>
+    <br>
+    <br>
+    </details>
+  </div>
+    <br>
+  <div class="container">
+  <details><summary>
+  <b>9th Class</b>
+  </summary>
+
+    <br>
+           <br>
+                              <a href="https://drive.google.com/file/d/1_kMxiLK96aHM1uX_v3uh9XXCIQSvQN2j/view?usp=sharing">
+                                <b>English(Main Course Book)</b>
+                              </a>
+                              <br>
+                              <br>
+                                  <a href="https://drive.google.com/file/d/1HxaAhXnHImC_9voMaBxlk1KGGxgkpxXM/view?usp=sharing">
+                                    <b>English  (Supplementary Reader)</b>
+                                  </a>
+                                  <br>
+                                  <br>
+                                      <a href="https://drive.google.com/file/d/1xZK47EpxwawNiByaYg2T_3Ekr2NKw0fN/view?usp=sharing">
+                                        <b>English(English Grammar & Composition)</b>
+                                      </a>
+                                      <br>
+                                      <br>
+                              <a href="https://drive.google.com/open?id=1GoOG8c5n0bS8mN3d9pmU6Y4t_0Ot7HPR">
+                                <b>Science</b>
+                              </a>
+                              <br>
+                              <br>
+                              <a href="https://drive.google.com/open?id=1P_aKh3B8sc_5GEw7oDZbOTrlsgTMff1X&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+                                <b>Math</b>
+                              </a>
+                              <br>
+                              <br>
+                              <a href="https://drive.google.com/open?id=1VSCvc6vwsNFBDniq2xy4_GtTx71pAvCX">
+                                <b>Hindi(पाठ्य पुस्तक)</b>
+                              </a>
+                              <br>
+                              <br>
+                                  <a href="https://drive.google.com/open?id=1VRO8h-bmJn4jEuS1IrCgOUbWf9wG2uP8">
+                                    <b>Hindi(हिन्दी व्याकरण)</b>
+                                  </a>
+                                  <br>
+                                  <br>
+                              <a href="https://drive.google.com/open?id=1tfOZJxCuItEOJsvODnLGDRvFX8ZbVOSw&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+                                <b>Computer Science</b>
+                              </a>
+                              <br>
+                              <br>
+                              <a href="https://drive.google.com/open?id=1wXHjkmJQwxsiXjzHSNdbDfKJaHVJdw96&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+                                <b>Punjabi(ਆਧੁਨਿਕ ਪੰਜਾਬੀ-ਵਿਆਕਰਨ ਅਤੇ ਲੇਖ-ਰਚਨਾ)</b>
+                              </a>
+                              <br>
+                              <br>
+                                      <a href="https://drive.google.com/open?id=1wa9qiI_sYymWnbZcUJQXR3j8OFudjio1&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+                                        <b>Punjabi(ਇੱਕ ਹੋਰ ਨਵਾਂ ਸਾਲ (ਨਾਵਲ))</b>
+                                      </a>
+                                      <br>
+                                      <br>
+                                              <a href="https://drive.google.com/open?id=1wdvO1D1MQ9tTckWheox4aM7h10kRx-fp&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+                                                <b>Punjabi(ਸਾਹਿਤ ਮਾਲਾ)</b>
+                                              </a>
+                                              <br>
+                                              <br>
+                                                      <a href="https://drive.google.com/open?id=1wo18Pb-ilAMs_rhCHvxtEIAJSBXAh0N9&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+                                                        <b>Punjabi(ਵੰਨਗੀ)</b>
+                                                      </a>
+                                                      <br>
+                                                      <br>
+                              <a href="https://drive.google.com/file/d/1iFqFYb9f0AWPxqj6KMamIDQHENs_Gzzu/view?usp=sharing">
+                                <b>Social Science(Part-1)</b>
+                              </a>
+                              <br>
+                              <br>
+                                  <a href="https://drive.google.com/open?id=1sbK8l7_Y__CztEPD0bndq4OXeNt-vfLv">
+                                    <b>Social Science(Part-2)</b>
+                                  </a>
+                                  <br>
+                                  <br>
+  </details>
+</div>
+<br>
+  <div class="container">
+  <details><summary>
+  <b>10th Class</b>
+  </summary>
+          <br>
+          <br>
+          <a href="https://drive.google.com/open?id=1pAkgpYlgWklGTlRbjNnvJCJMBCUoBkjR">
+            <b>English(Main Course Book)</b>
+          </a>
+          <br>
+          <br>
+            <a href="https://drive.google.com/open?id=1YkJQR-aEpZF7-4W9vL4pruJ12teLZs_r">
+              <b>English(Supplementary Reader)</b>
+            </a>
+            <br>
+            <br>
+              <a href="https://drive.google.com/file/d/1c0Jppx2E5L9yAEOoDvapWUs2LoIT5oKV/view?usp=sharing">
+                <b>English(English Grammar & Composition)</b>
+              </a>
+              <br>
+              <br>
+          <a href="https://drive.google.com/open?id=1Oj7IzUx_KLiWanzJE1iavq0JtowBLnC2">
+            <b>Science</b>
+          </a>
+          <br>
+          <br>
+          <a href="https://drive.google.com/open?id=1P5RAbfaREY4Ek0Xb_uY2LzgH5El1cPZx&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+            <b>Math</b>
+          </a>
+          <br>
+          <br>
+          <a href="https://drive.google.com/file/d/1YyjTPtZimhviU8nuDeHcyorgM97BSYJu/view?usp=drivesdk">
+            <b>Hindi(पाठ्य पुस्तक)</b>
+          </a>
+          <br>
+          <br>
+            <a href="https://drive.google.com/open?id=18g1wFr9NAm_pMiTEq6Wf1aaxlZWo1hZg">
+              <b>Hindi(हिन्दी व्याकरण)</b>
+            </a>
+            <br>
+            <br>
+          <a href="https://drive.google.com/open?id=1tlXUOBVsXqd8zCbz0eNYs_2c7ibt0VJE&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+            <b>Computer Science</b>
+          </a>
+          <br>
+          <br>
+          <a href="https://drive.google.com/open?id=1wXHjkmJQwxsiXjzHSNdbDfKJaHVJdw96&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+            <b>Punjabi(ਆਧੁਨਿਕ ਪੰਜਾਬੀ-ਵਿਆਕਰਨ ਅਤੇ ਲੇਖ-ਰਚਨਾ)</b>
+          </a>
+          <br>
+          <br>
+                <a href="https://drive.google.com/open?id=1wa9qiI_sYymWnbZcUJQXR3j8OFudjio1&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+                  <b>Punjabi(ਇੱਕ ਹੋਰ ਨਵਾਂ ਸਾਲ (ਨਾਵਲ))</b>
+                </a>
+                <br>
+                <br>
+                    <a href="https://drive.google.com/open?id=1wphd-u9d9gNx7cVowEFkpgLjgSMbjNb7&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+                      <b>Punjabi(ਸਾਹਿਤ ਮਾਲਾ)</b>
+                    </a>
+                    <br>
+                    <br>
+                    <a href="https://drive.google.com/open?id=1wrf079mkd_0X3IePnS5dnVdxI4hfeW15&authuser=punjabeducare%40ppppjalandhar.org&usp=drive_fs">
+                      <b>Punjabi(ਵੰਨਗੀ)</b>
+                    </a>
+                    <br>
+                    <br>
+          <a href="https://drive.google.com/file/d/1I-3SVxp8AVZDxsjRe3OrhMCYkXEHCHyP/view?usp=sharing">
+            <b>Social Science(Part-1)</b>
+          </a>
+          <br>
+          <br>
+              <a href="https://drive.google.com/file/d/1IKbINCmK4T9ZLtzmEMCAhTSXqG1MDoyr/view?usp=sharing">
+                <b>Social Science(Part-2)</b>
+              </a>
+              <br>
+              <br>
+  </details>
+</div>
+<footer>
+
+  <div class="footertopp">
+
+    <!-- other apps or sites -->
+    <div class="othersites">
+      <h1>Other Platform's</h1>
+      <br>
+      <div class="sites">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/share/rVnZCTwsAHi94ks1/?mibextid=qi2Omg"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://wa.me//+919878610601"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+  <!-- other links -->
+  <div class="footer-top">
+    <div class="footer-q">
+     <a href="about.html"> <h1>About</h1></a>
+     <br>
+    <a href="home.html">  <h1>home</h1></a>
+    <br>
+    <a href="student.html">  <h1>Learning Corner</h1></a><br>
+       <a href="https://wa.me//+919878610601"> <h1>Contact</h1></a>
+       <br>
+  <a href="admission.html">    <h1>Admition</h1></a>
+  <br>
+    </div>
+    <div class="footer-w">
+   <a href="ebooks.html">   <h1>E-book</h1></a>
+   <br>
+   <a href="online.html">   <h1>Quiz</h1></a>
+   <br>
+<a href="https://www.abcya.com/">      <h1>Games</h1></a>
+<br>
+   <a href="https://www.punjabeducare.org/pseb-syllabus">   <h1>Syllabus</h1></a>
+   <br>
+  <a href="result.html">    <h1>result</h1></a>
+    </div>
+  </div>
+    <br>
+  <div class="newu">
+    <h4>Programming Language</h4>
+    <br>
+    <div class="new">
+    <h3>Html</h3>
+    <h3>Css</h3>
+    <h3>Javascript</h3>
+    </div>
+  </div>
+  
+  <!-- site privacy and non copy content proffs -->
+  <div class="footer1">
+    <div class="footerqw"><a href="license.html">License</a> 
+    <a href="privacy.html">Privacy</a>
+    <a href="https:\\wa.me\\+918264751918">Contact with Web Designer</a>
+    <a href="tercon.html">Terms and condition</a>
+    </div>
+  </div>
+  &copy;Govt high school khunde halal.All rights reserved
+</footer>
+</body>
+
+</html>

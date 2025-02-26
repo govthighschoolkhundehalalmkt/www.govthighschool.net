@@ -1,0 +1,109 @@
+header{
+  position:absolute;
+  top:0;
+  right:0;
+  left:0;
+
+}
+ol{
+  display:inline;
+  text-align:center;
+  font-size:20px;
+  border-right:2px solid white;
+}
+ol a{
+  color:white;
+  text-decoration:none;
+}
+.lpg{
+  
+    padding:20px 5px;
+  text-align:center;
+    height:20px;
+    background-color:rgb(25,25,25);
+  white-space:nowrap;
+  overflow:auto;
+  height:20px;
+}
+  input[type=text], input[type=password], input[type=email]{
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+select{
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.container {
+  margin-top:100px;
+}
+.bty {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 45%;
+}
+input[type=checkbox]{
+  background-color:blue;
+  color:blue;
+}
+.bty:hover {
+  background-color:blue;
+}
+  .settings-container {
+            position:absolute ;
+            top:60px;
+            right: 20px;
+            height:100%;
+            width: 55%;
+            left:0;
+            bottom:0;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            display: none; /* Hidden by default */
+        }
+        .settings-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .settings-header h2 {
+            margin: 0;
+        }
+        .settings-close {
+            cursor: pointer;
+            font-size:4rem;
+           text-align:left;
+        }
+        .settings-toggle {
+            position:fixed;
+            top:55px;
+            left:1px;
+            padding: 10px 20px;
+            background-color: transparent;
+            color:black;
+            font-size:30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .setting-content .a{
+          text-decoration:none;
+          color:black;
+        }
+        a{
+  text-decoration:none;
+  color:black;
+}
